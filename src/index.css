@@ -1,17 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;  
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
 
 
 /* font-family: 'Montserrat', sans-serif; */
 /* font-family: 'Open Sans', sans-serif; */
 /* font-family: 'Raleway', sans-serif; */
 
-.hero{
+.hero, .contact, .about, header {
     background: radial-gradient(50% 50% at 50% 50%, rgba(26, 21, 21, 0.00) 0%, rgba(1, 1, 1, 0.16) 100%), #FFF;
 }
 header{
@@ -20,3 +21,18 @@ header{
 .work{
     background: linear-gradient(90deg, #1D1D1D 31.74%, #1D1D1D 90.49%, #1D1D1D 90.49%);
 }
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px); /* Adjust the bounce height as needed */
+    }
+    60% {
+      transform: translateY(-10px); /* Adjust the bounce height as needed */
+    }
+  }
+  
+  .animate-bounce {
+    animation: bounce 1s ease-in-out infinite;
+  }

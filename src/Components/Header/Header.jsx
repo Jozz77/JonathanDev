@@ -31,10 +31,10 @@ export default function Header() {
         Jo_Na_Than
       </div>
       <nav className="flex justify-between items-center w-[40%] font-Montserrat font-bold text-[1rem] ">
-        <Link to='/'>About me</Link>
-        <Link to='/'>Portfolio</Link>
-        <Link to='/'>Blog</Link>
-        <Link to='/'>
+        <Link to='/' className="hover:text-gray ">About me</Link>
+        <Link to='/' className="hover:text-gray ">Portfolio</Link>
+        <Link to='/' className="hover:text-gray ">Blog</Link>
+        <Link to='/' className="hover:text- ">
             <button className=" bg-gray py-3 px-6 rounded-full">Contact Me</button>
         </Link>
       </nav>
