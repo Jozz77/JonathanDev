@@ -17,10 +17,13 @@ export default {
         'Primary':'radial-gradient(50% 50% at 50% 50%, rgba(26, 21, 21, 0.00) 0%, rgba(1, 1, 1, 0.16) 100%), #FFF',
         'Secondary':'#000',
         'WhiteBoldText':'#FFFFFF',
+        'whiteOther':'#FFFBFB',
+        'otherBlack':'#1A1A1A',
         // 'WhiteNormalText':'#F6F6F6',
         // 'white':'rgba(255, 255, 255, 1)',
         // 'black':' #000000',
-        'gray': ' #909090'
+        'gray': ' #909090',
+        'otherGray':'#7C7C7C'
 
     },
     extend: {

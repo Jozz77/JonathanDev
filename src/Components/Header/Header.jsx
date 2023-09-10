@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
-    <header className="flex bg-Primary justify-between px-[10%] items-center fixed top-0 w-full py-4 ">
+    <header className="flex bg-Primary z-10 justify-between px-[10%] items-center fixed top-0 w-full py-4 ">
       <div className="text-[2rem] font-Montserrat font-bold ">
         {/* <svg
           xmlns="http://www.w3.org/2000/svg"
