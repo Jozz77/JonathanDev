@@ -13,6 +13,7 @@ const BlogData = [
     {
         id: 2,
         img: Project2,
+        author: 'Benoit Ruiz',
         title: 'Bake Blog',
         description: 'A restuarant site using the best',
         link: 'https://klyn-dentals.vercel.app/'
@@ -20,8 +21,9 @@ const BlogData = [
     {
         id: 3,
         img: Project,
+        author: 'Benoit Ruiz',
         title: 'Klyn Dentals',
-        description: 'A restuarant site using the best',
+        description: 'A restuarant site using the best go to the place',
         link: 'https://klyn-dentals.vercel.app/'
     },
 ]

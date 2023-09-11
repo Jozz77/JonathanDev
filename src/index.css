@@ -44,7 +44,7 @@ header{
     background-position: center;
   }
   .blog-head{
-    background-image: url('./assets/Portfolio.png');
+    background-image: url('../src/Homepage/Assets/portfolio.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

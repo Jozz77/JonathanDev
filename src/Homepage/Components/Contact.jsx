@@ -54,8 +54,8 @@ export default function Contact() {
           id=""
         />
 
-        <div className="flex justify-center mt-10    ">
-          <button className=" border-solid border-black px-8 py-1 text-base font-bold   border-r-[3px] border-l-[3px] hover:text-gray hover:border-gray  ">
+        <div className="flex justify-center mt-8   ">
+          <button className=" border-solid border-black px-8 py-2 text-base font-bold border-[3px] hover:text-gray hover:border-gray  ">
             SEND
           </button>
         </div>
