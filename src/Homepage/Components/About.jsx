@@ -1,11 +1,12 @@
+import Heading from '../../Components/Header/Heading';
 import Seperator from '../Assets/Seperator.png'
 
 export default function About() {
   return (
     <div className='about py-20'>
-      <div className='border-solid border-[6px] border-black w-fit py-2 px-12 mx-auto'> 
-       <h1 className='text-[2rem] font-Montserrat font-bold tracking-[10px] '>ABOUT ME</h1>
-       </div>
+      <div>
+        <Heading text="ABOUT ME" />
+      </div>
        <p className=' font-OpenSans text-center pt-8 text-base w-[60%] mx-auto '>
        My name is Tomasz Gajda, I'm a third year Applied Computer Science
         student at the AGH University of Science and Technology in Krakow. I

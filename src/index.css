@@ -38,7 +38,13 @@ header{
   }
 
   .port-head{
-    background-image: url('./Homepage/Assets/portfolio.png');
+    background-image: url('./assets/Blog.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .blog-head{
+    background-image: url('./assets/Portfolio.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

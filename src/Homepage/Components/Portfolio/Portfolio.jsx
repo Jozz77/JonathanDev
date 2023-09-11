@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import PortfolioData from "./PortolioData";
+import Heading from "../../../Components/Header/Heading";
 
 export default function Portfolio() {
   const [activeTab, setActiveTab] = useState("tab1"); // Set the default active tab
@@ -19,14 +20,14 @@ export default function Portfolio() {
     setActiveTab(tab);
   };
 
-  // Filter the portfolio items based on the activeTab
-  const filteredPortfolioData = PortfolioData.filter((portfolio) => {
-    return portfolio.whichProject === activeTab;
-  });
 
   return (
     <div className="bg-otherBlack text-whiteOther">
-      {/* ... */}
+
+      <section className="port-head py-8 text-Secondary ">
+      <Heading text='PORTFOLIO' />
+      </section>
+      
       <section className="w-full text-WhiteBoldText">
         <div className="flex justify-center py-4 mb-4 ">
           <div

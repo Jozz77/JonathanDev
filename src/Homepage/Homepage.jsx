@@ -5,7 +5,7 @@ import About from "./Components/About"
 import Contact from "./Components/Contact"
 import Footer from "../Components/Footer/Footer"
 import Portfolio from "./Components/Portfolio/Portfolio"
-import PortfolioData from "./Components/Portfolio/PortolioData"
+import Blog from "./Components/Blog/Blog"
 
 
 export default function Homepage() {
@@ -15,7 +15,8 @@ export default function Homepage() {
         <Hero />
         <Work />
         <About />
-        <Portfolio PortfolioData={PortfolioData} />
+        <Portfolio />
+        <Blog />
         <Contact />
         <Footer />
     </div>

@@ -1,13 +1,12 @@
+import Heading from "../../Components/Header/Heading";
 import Seperator from "../Assets/Seperator.png";
 
 export default function Contact() {
   return (
     <div className="contact pt-16 pb-4 ">
       <section>
-        <div className="border-solid border-[6px] border-black w-fit py-2 px-12 mx-auto">
-          <h1 className="text-[2rem] font-Montserrat font-bold tracking-[10px] ">
-            CONTACT
-          </h1>
+        <div>
+          <Heading text='CONTACT' />
         </div>
         <p className=" font-OpenSans text-center pt-8 text-base w-[50%] mx-auto ">
           Discover endless possibilities. Your journey begins with a simple
