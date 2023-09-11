@@ -1,20 +1,22 @@
 export default function Work() {
   return (
-    <div className="work text-WhiteBoldText px-[5%] py-6 font-OpenSans">
-      <h1 className=" text-[1.5rem] font-bold ">IT BERRIES</h1>
+    <div className="work text-WhiteBoldText flex justify-between px-[5%] py-6 font-OpenSans">
+      <section className=" w-[45%] ">
+      <h1 className=" text-[1.3rem] font-bold tracking-[5px] ">SKILLS</h1>
       <p className=" font-Montserrat pt-2 text-[0.95rem]">
-        I am one of the members of a scientific club that brings together
-        enthusiasts of the Internet and new technologies. At ITberries, we
-        design and develop websites and web applications. Apart from the
-        projects, our biggest undertaking is the Ciemna Strona UX conference,
-        which we are organizing for the sixth time. Working in a club as a
-        Front-End Developer definitely developed my skills in group work and
-        working under time pressure. If you want to know more about us, click
-        the button below!{" "}
+        HTML, CSS, JavaScript React JS, Tailwind, SCSS, Git and Github
       </p>
-      <section className=" pt-8">
-        <button className=" border-solid border-WhiteBoldText px-8 border-r-[2px] border-l-[2px] ">MORE</button>
       </section>
+      <section className=" w-[45%] ">
+      <h1 className=" text-[1.2rem] font-bold tracking-[2px] ">EDUCATION AND CERTIFICATES</h1>
+      <p className=" font-Montserrat pt-2 text-[0.95rem]">
+        Zuri I4G Internship
+      </p>
+      <p className=" font-Montserrat pt-2 text-[0.95rem]">
+        HNGi9 Internship
+      </p>
+      </section>
+     
     </div>
   );
 }
