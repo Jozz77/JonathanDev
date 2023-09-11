@@ -26,5 +26,21 @@ const BlogData = [
         description: 'A restuarant site using the best go to the place',
         link: 'https://klyn-dentals.vercel.app/'
     },
+    {
+        id: 2,
+        img: Project2,
+        author: 'Benoit Ruiz',
+        title: 'Bake Blog',
+        description: 'A restuarant site using the best',
+        link: 'https://klyn-dentals.vercel.app/'
+    },
+    {
+        id: 3,
+        img: Project,
+        author: 'Benoit Ruiz',
+        title: 'Klyn Dentals',
+        description: 'A restuarant site using the best go to the place',
+        link: 'https://klyn-dentals.vercel.app/'
+    },
 ]
 export default BlogData

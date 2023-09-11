@@ -38,15 +38,16 @@ header{
   }
 
   .port-head{
-    background-image: url('./assets/Blog.png');
+    background-image: url('./assets/Port2.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    opacity: 0.9;
   }
   .blog-head{
     background-image: url('../src/Homepage/Assets/portfolio.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    /* opacity: 0.8; */
   }
-  

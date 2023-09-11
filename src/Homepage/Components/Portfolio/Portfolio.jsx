@@ -24,7 +24,7 @@ export default function Portfolio() {
   return (
     <div className="bg-otherBlack text-whiteOther">
 
-      <section className="port-head py-8 text-Secondary ">
+      <section className="port-head bg-WhiteBoldText  py-8 text-Secondary ">
       <Heading text='MY PORTFOLIO' />
       </section>
       
@@ -118,6 +118,13 @@ export default function Portfolio() {
             className="relative w-1/3 group"
           >
             <img src={portfolio.img} className="w-full" alt="" />
+            <div className={`absolute flex justify-center font-Montserrat  bg-Secondary bg-opacity-50 bottom-0 right-0 top-0 left-0 bg-white p-4 w-full shadow-md transition-opacity duration-1000 ${
+                    !isHovered ? "opacity-100" : "opacity-0"
+                  }`}>
+                <h1 className="text-[1.6rem] absolute bottom-[10%] font-bold tracking-[5px] mt-1">
+                    {portfolio.title}
+                  </h1>
+                </div>
             <div
               className={`absolute flex flex-col items-center font-Montserrat justify-center bg-Secondary bg-opacity-50 bottom-0 right-0 top-0 left-0 bg-white p-4 w-full shadow-md transition-opacity duration-1000 ${
                 isHovered ? "opacity-100" : "opacity-0"
@@ -155,6 +162,13 @@ export default function Portfolio() {
             className="relative w-1/3 group"
           >
             <img src={portfolio.img} className="w-full" alt="" />
+            <div className={`absolute flex justify-center font-Montserrat  bg-Secondary bg-opacity-50 bottom-0 right-0 top-0 left-0 bg-white p-4 w-full shadow-md transition-opacity duration-1000 ${
+                    !isHovered ? "opacity-100" : "opacity-0"
+                  }`}>
+                <h1 className="text-[1.6rem] absolute bottom-[10%] font-bold tracking-[5px] mt-1">
+                    {portfolio.title}
+                  </h1>
+                </div>
             <div
               className={`absolute flex flex-col items-center font-Montserrat justify-center bg-Secondary bg-opacity-50 bottom-0 right-0 top-0 left-0 bg-white p-4 w-full shadow-md transition-opacity duration-1000 ${
                 isHovered ? "opacity-100" : "opacity-0"
