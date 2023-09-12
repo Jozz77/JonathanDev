@@ -33,31 +33,31 @@ export default function Portfolio() {
         <div className="flex justify-center py-2 sm:py-4 mb-0 sm:mb-4 ">
           <div
             onClick={() => handleTabClick("tab1")}
-            className={`cursor-pointer py-2 sm:py-4 px-3 ssm:px-6 sm:px-8 md:px-12 ${
+            className={`cursor-pointer py-2 sm:py-4 px-2 ssm:px-6 sm:px-8 md:px-12 ${
               activeTab === "tab1"
                 ? "border-b-2 border-whiteOther transition duration-800 ease-in-out"
                 : "border-b-2 text-gray border-gray transition duration-800 ease-in-out"
-            } text-[0.6rem] ssm:text-[0.7rem] sm:text-[0.9rem] font-Montserrat font-semibold`}
+            } text-[0.7rem] ssm:text-[0.7rem] sm:text-[0.9rem] font-Montserrat font-semibold`}
           >
             ALL
           </div>
           <div
             onClick={() => handleTabClick("tab2")}
-            className={`cursor-pointer py-2 sm:py-4 px-3 ssm:px-6 sm:px-8 md:px-12 ${
+            className={`cursor-pointer py-2 sm:py-4 px-2 ssm:px-6 sm:px-8 md:px-12 ${
               activeTab === "tab2"
                 ? "border-b-2 border-whiteOther transition duration-800 ease-in-out"
                 : "border-b-2 text-gray border-gray transition duration-800 ease-in-out"
-            } text-[0.6rem] ssm:text-[0.7rem] sm:text-[0.9rem] font-Montserrat font-semibold`}
+            } text-[0.7rem] ssm:text-[0.7rem] sm:text-[0.9rem] font-Montserrat font-semibold`}
           >
             PERSONAL PROJECTS
           </div>
           <div
             onClick={() => handleTabClick("tab3")}
-            className={`cursor-pointer py-2 sm:py-4 px-3 ssm:px-6 sm:px-8 md:px-12 ${
+            className={`cursor-pointer py-2 sm:py-4 px-2 ssm:px-6 sm:px-8 md:px-12 ${
               activeTab === "tab3"
                 ? "border-b-2 border-whiteOther transition duration-800 ease-in-out"
                 : "border-b-2 text-gray border-gray transition duration-800 ease-in-out"
-            } text-[0.6rem] ssm:text-[0.7rem] sm:text-[0.9rem] font-Montserrat font-semibold`}
+            } text-[0.7rem] ssm:text-[0.7rem] sm:text-[0.9rem] font-Montserrat font-semibold`}
           >
             GROUP PROJECTS
           </div>
@@ -88,11 +88,11 @@ export default function Portfolio() {
                     isHovered ? "opacity-100" : "opacity-0"
                   }`}
                 >
-                  <p className="text-[0.7rem] ssm:text-[0.8rem] sm:text-[0.7rem] font-semibold">coded</p>
+                  <p className="text-[0.8rem] ssm:text-[0.8rem] sm:text-[0.7rem] font-semibold">coded</p>
                   <h1 className="text-[1.2rem] ssm:text-[1.6rem] sm:text-[1.1rem] md:text-[1.6rem]  lg:text-[1.4rem] xl:text-[1.6rem] font-bold tracking-[5px] mt-1">
                     {portfolio.title}
                   </h1>
-                  <p className="text-[0.7rem] ssm:text-[0.8rem] sm:text-[0.7rem] px-[10%] lg:px-[15%] text-center font-medium mt-2 lg:mt-4">
+                  <p className="text-[0.8rem] ssm:text-[0.8rem] sm:text-[0.7rem] sm:px-[10%] px-[5%] lg:px-[15%] text-center font-medium mt-2 lg:mt-4">
                     {portfolio.description}
                   </p>
                   <Link to={portfolio.link} target="_blank" className="">
@@ -129,11 +129,11 @@ export default function Portfolio() {
                 isHovered ? "opacity-100" : "opacity-0"
               }`}
             >
-              <p className="text-[0.7rem] ssm:text-[0.8rem] sm:text-[0.7rem] font-semibold">coded</p>
+              <p className="text-[0.8rem] ssm:text-[0.8rem] sm:text-[0.7rem] font-semibold">coded</p>
               <h1 className="text-[1.2rem] ssm:text-[1.6rem] sm:text-[1.1rem] lg:text-[1.4rem] xl:text-[1.6rem] font-bold tracking-[5px] mt-1">
                 {portfolio.title}
               </h1>
-              <p className="text-[0.7rem] ssm:text-[0.8rem] sm:text-[0.7rem] px-[10%] lg:px-[15%] text-center font-medium mt-2 lg:mt-4">
+              <p className="text-[0.8rem] ssm:text-[0.8rem] sm:text-[0.7rem] sm:px-[10%] px-[5%] lg:px-[15%] text-center font-medium mt-2 lg:mt-4">
                 {portfolio.description}
               </p>
               <Link to={portfolio.link} target="_blank" className="">
@@ -171,11 +171,11 @@ export default function Portfolio() {
                 isHovered ? "opacity-100" : "opacity-0"
               }`}
             >
-              <p className="text-[0.7rem] ssm:text-[0.8rem] sm:text-[0.7rem] font-semibold">coded</p>
+              <p className="text-[0.8rem] ssm:text-[0.8rem] sm:text-[0.7rem] font-semibold">coded</p>
               <h1 className="text-[1.2rem] ssm:text-[1.6rem] sm:text-[1.1rem] lg:text-[1.4rem] xl:text-[1.6rem] font-bold tracking-[5px] mt-1">
                 {portfolio.title}
               </h1>
-              <p className="text-[0.7rem] ssm:text-[0.8rem] sm:text-[0.7rem] px-[10%] lg:px-[15%] text-center font-medium mt-2 lg:mt-4">
+              <p className="text-[0.8rem] ssm:text-[0.8rem] sm:text-[0.7rem] sm:px-[10%] px-[5%] lg:px-[15%] text-center font-medium mt-2 lg:mt-4">
                 {portfolio.description}
               </p>
               <Link to={portfolio.link} target="_blank" className="">
