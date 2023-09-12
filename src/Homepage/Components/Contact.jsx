@@ -23,7 +23,7 @@ export default function Contact() {
         className=" font-Montserrat bg-none text-Secondary py-8 lg:py-10 xl:py-12 w-[70%] sm:w-[60%] md:w-[50%] lg:w-[40%] mx-auto "
       >
         <input
-          className="w-full mt-4 text-[0.75rem] ssm:text-[0.8rem] sm:text-[0.85rem] lg:text-[0.9rem] placeholder:text-[0.75rem] placeholder:ssm:text-[0.8rem] placeholder:sm:text-[0.85rem] placeholder:lg:text-[0.9rem] focus:border-gray placeholder:text-gray px-[4%] ssm:px-[2%] py-2 bg-[transparent] border-solid border-b-[4px] border-l-[4px] border-Secondary outline-none "
+          className="w-full mt-4 text-[0.8rem] sm:text-[0.85rem] lg:text-[0.9rem]  placeholder:text-[0.8rem] placeholder:sm:text-[0.85rem] placeholder:lg:text-[0.9rem] focus:border-gray placeholder:text-gray px-[4%] ssm:px-[2%] py-2 bg-[transparent] border-solid border-b-[4px] border-l-[4px] border-Secondary outline-none "
           type="text"
           name="name"
           placeholder="ENTER YOUR NAME*"
@@ -31,7 +31,7 @@ export default function Contact() {
         />
 
         <input
-          className="w-full mt-8 xl:mt-10  text-[0.75rem] ssm:text-[0.8rem] sm:text-[0.85rem] lg:text-[0.9rem] placeholder:text-[0.75rem] placeholder:ssm:text-[0.8rem] placeholder:sm:text-[0.85rem] placeholder:lg:text-[0.9rem] focus:border-gray placeholder:text-gray px-[4%] ssm:px-[2%] py-2 bg-[transparent] border-solid border-b-[4px] border-l-[4px] border-Secondary outline-none "
+          className="w-full mt-8 xl:mt-10  text-[0.8rem] sm:text-[0.85rem] lg:text-[0.9rem]  placeholder:text-[0.8rem] placeholder:sm:text-[0.85rem] placeholder:lg:text-[0.9rem] focus:border-gray placeholder:text-gray px-[4%] ssm:px-[2%] py-2 bg-[transparent] border-solid border-b-[4px] border-l-[4px] border-Secondary outline-none "
           type="text"
           name="email"
           placeholder="ENTER YOUR EMAIL*"
@@ -39,7 +39,7 @@ export default function Contact() {
         />
 
         <input
-          className="w-full mt-8 xl:mt-10 text-[0.75rem] ssm:text-[0.8rem] sm:text-[0.85rem] lg:text-[0.9rem] placeholder:text-[0.75rem] placeholder:ssm:text-[0.8rem] placeholder:sm:text-[0.85rem] placeholder:lg:text-[0.9rem] focus:border-gray placeholder:text-gray px-[4%] ssm:px-[2%] py-2 bg-[transparent] border-solid border-b-[4px] border-l-[4px] border-Secondary outline-none "
+          className="w-full mt-8 xl:mt-10 text-[0.8rem] sm:text-[0.85rem] lg:text-[0.9rem]  placeholder:text-[0.8rem] placeholder:sm:text-[0.85rem] placeholder:lg:text-[0.9rem] focus:border-gray placeholder:text-gray px-[4%] ssm:px-[2%] py-2 bg-[transparent] border-solid border-b-[4px] border-l-[4px] border-Secondary outline-none "
           type="text"
           name="number"
           placeholder="PHONE NUMBER"
@@ -47,7 +47,7 @@ export default function Contact() {
         />
 
         <textarea
-          className="w-full mt-8 xl:mt-10 text-[0.75rem] ssm:text-[0.8rem] sm:text-[0.85rem] lg:text-[0.9rem] resize-none placeholder:text-[0.75rem] placeholder:ssm:text-[0.8rem] placeholder:sm:text-[0.85rem] placeholder:lg:text-[0.9rem] focus:border-gray placeholder:text-gray px-[2%] pb-16 bg-[transparent] border-solid border-b-[4px] border-l-[4px] border-Secondary outline-none "
+          className="w-full mt-8 xl:mt-10 text-[0.8rem] sm:text-[0.85rem] lg:text-[0.9rem] xt-[0.75rem] eholder:ssm:text-[0.8rem] placeholder:sm:text-[0.85rem] placeholder:lg:text-[0.9rem] focus:border-gray placeholder:text-gray px-[2%] pb-16 bg-[transparent] border-solid border-b-[4px] border-l-[4px] border-Secondary outline-none "
           type="text"
           name="name"
           placeholder="YOUR MESSAGE* "

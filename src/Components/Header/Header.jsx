@@ -56,8 +56,8 @@ export default function Header() {
           className={`${
             isOpen
               ? "h-[100vh] transition-h duration-1000 ease-in-out"
-              : "h-[0] duration-300"
-          } sm:flex justify-between items-center w-[65%] md:w-[60%] xl:w-[50%] font-Montserrat font-bold text-[0.85rem] md:text-[0.9rem] lg:text-[1rem] overflow-hidden`}
+              : "h-[0] duration-500"
+          } sm:flex justify-between items-center w-full sm:w-[65%] md:w-[60%] xl:w-[50%] overflow-hidden`}
         >
           {/* Desktop navigation links */}
           <div className="hidden sm:flex justify-between items-center w-[100%] font-Montserrat font-bold text-[0.85rem] md:text-[0.9rem] lg:text-[1rem]">
@@ -101,7 +101,7 @@ export default function Header() {
             </Link>
           </div>
           {/* Mobile navigation links */}
-          <div className="block sm:hidden">
+          <div className="flex flex-col pt-12 gap-y-8 justify-center items-center text-[1.1rem] font-Montserrat font-bold sm:hidden">
             <Link
               to="about"
               smooth={true}
