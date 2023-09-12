@@ -57,7 +57,7 @@ export default function Header() {
             isOpen
               ? "h-[100vh] transition-h duration-1000 ease-in-out"
               : "h-[0] duration-500"
-          } sm:flex justify-between items-center w-full sm:w-[65%] md:w-[60%] xl:w-[50%] overflow-hidden`}
+          } sm:flex justify-between items-center w-full sm:w-[65%] md:w-[60%] xl:w-[50%]`}
         >
           {/* Desktop navigation links */}
           <div className="hidden sm:flex justify-between items-center w-[100%] font-Montserrat font-bold text-[0.85rem] md:text-[0.9rem] lg:text-[1rem]">
