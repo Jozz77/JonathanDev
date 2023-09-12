@@ -8,7 +8,7 @@ export default function Contact() {
         <div>
           <Heading text='CONTACT' />
         </div>
-        <p className=" font-OpenSans text-center pt-4 lg:pt-6 xl:pt-8 text-[0.85rem] ssm:text-[0.9rem] sm:text-base w-[70%] md:w-[60%] lg:w-[50%] mx-auto ">
+        <p className=" font-OpenSans text-center pt-4 lg:pt-6 xl:pt-8 text-[0.85rem] ssm:text-[0.9rem] sm:text-base w-[80%] sm:w-[70%] md:w-[60%] lg:w-[50%] mx-auto ">
           Discover endless possibilities. Your journey begins with a simple
           message. Let's connect and create something amazing together. Reach
           out to me today and let your ideas come to life.
