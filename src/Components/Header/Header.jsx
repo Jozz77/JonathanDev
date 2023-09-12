@@ -13,10 +13,10 @@ export default function Header() {
   };
 
   return (
-    <header className="bg-Primary z-10 fixed top-0 w-full py-3 xl:py-4">
+    <header className="bg-Primary z-10 fixed top-0 w-full py-2 sm:py-3 xl:py-4">
       <div className="sm:flex sm:justify-between md:items-center px-[5%] md:px-[7%] lg:px-[10%]">
         <div className="flex items-center justify-between">
-          <div className="text-[1.2rem] sm:text-[1.3rem] md:text-[1.5rem] lg:text-[1.7rem] xl:text-[2rem] font-Montserrat font-bold ">
+          <div className="text-[1.4rem] sm:text-[1.3rem] md:text-[1.5rem] lg:text-[1.7rem] xl:text-[2rem] font-Montserrat font-bold ">
             Jo_Na_Than
           </div>
           <div className="sm:hidden">
@@ -26,7 +26,7 @@ export default function Header() {
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className={`h-6 w-6 transform transition-transform ${
+                className={`h-8 w-8 transform transition-transform ${
                   isOpen ? "duration-300 rotate-90" : "duration-1000"
                 }`}
                 fill="none"
