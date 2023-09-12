@@ -10,7 +10,7 @@ import Blog from "./Components/Blog/Blog"
 
 export default function Homepage() {
   return (
-    <div className=" ">
+    <div className=" homepage ">
         <Header />
         <Hero />
         <Work />

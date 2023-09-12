@@ -3,7 +3,7 @@ import Seperator from "../Assets/Seperator.png";
 
 export default function Contact() {
   return (
-    <div className="contact pt-16 pb-4 ">
+    <div id="contact" className="contact pt-12 ">
       <section>
         <div>
           <Heading text='CONTACT' />
@@ -54,7 +54,7 @@ export default function Contact() {
           id=""
         />
 
-        <div className="flex justify-center mt-8   ">
+        <div className="flex justify-center mt-6   ">
           <button className=" border-solid border-black px-8 py-2 text-base font-bold border-[3px] hover:text-gray hover:border-gray  ">
             SEND
           </button>

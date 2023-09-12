@@ -7,10 +7,11 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import Button from "../../../Components/Header/Button";
 
 export default function Blog() {
   return (
-    <div className="bg-Secondary text-WhiteBoldText">
+    <div id="blog" className="bg-Secondary text-WhiteBoldText mt-12">
       <section className="blog-head py-8 text-Secondary">
         <Heading text='MY BLOG' />
       </section>
@@ -43,9 +44,7 @@ export default function Blog() {
                       {blog.description}
                     </p>
                     <Link to={blog.link} target="_blank" className="">
-                      <button className="border-solid border-black px-4 mt-4 font-semibold py-1 text-[0.85rem] border-r-[3px] border-l-[3px] hover:text-gray hover:border-gray">
-                        READ MORE
-                      </button>
+                    <Button text="READ MORE" />
                     </Link>
                   </div>
                 </div>

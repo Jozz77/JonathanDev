@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import PortfolioData from "./PortolioData";
 import Heading from "../../../Components/Header/Heading";
+import Button from "../../../Components/Header/Button";
 
 export default function Portfolio() {
   const [activeTab, setActiveTab] = useState("tab1"); // Set the default active tab
@@ -22,7 +23,7 @@ export default function Portfolio() {
 
 
   return (
-    <div className="bg-otherBlack text-whiteOther">
+    <div id="portfolio" className="bg-otherBlack text-whiteOther">
 
       <section className="port-head bg-WhiteBoldText  py-8 text-Secondary ">
       <Heading text='MY PORTFOLIO' />
@@ -95,9 +96,7 @@ export default function Portfolio() {
                     {portfolio.description}
                   </p>
                   <Link to={portfolio.link} target="_blank" className="">
-                    <button className="border-solid border-black px-4 mt-4 font-semibold py-1 text-[0.85rem] border-r-[3px] border-l-[3px] hover:text-gray hover:border-gray">
-                      LIVE SITE
-                    </button>
+                  <Button text="LIVE SITE" />
                   </Link>
                 </div>
               </section>
@@ -138,9 +137,7 @@ export default function Portfolio() {
                 {portfolio.description}
               </p>
               <Link to={portfolio.link} target="_blank" className="">
-                <button className="border-solid border-black px-4 mt-4 font-semibold py-1 text-[0.85rem] border-r-[3px] border-l-[3px] hover:text-gray hover:border-gray">
-                  LIVE SITE
-                </button>
+              <Button text="LIVE SITE" />
               </Link>
             </div>
           </section>
@@ -182,9 +179,9 @@ export default function Portfolio() {
                 {portfolio.description}
               </p>
               <Link to={portfolio.link} target="_blank" className="">
-                <button className="border-solid border-black px-4 mt-4 font-semibold py-1 text-[0.85rem] border-r-[3px] border-l-[3px] hover:text-gray hover:border-gray">
-                  LIVE SITE
-                </button>
+                <Button text="LIVE SITE" />
+                  
+
               </Link>
             </div>
           </section>

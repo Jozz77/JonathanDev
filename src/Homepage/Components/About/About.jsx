@@ -5,18 +5,18 @@ import Maint from "./Assets/Maint.png";
 
 export default function About() {
   return (
-    <div className="about py-20">
-      <div>
+    <div id="about" className="about pb-10 xl:pb-12">
+      <div className=" pt-10 xl:pt-12">
         <Heading text="ABOUT ME" />
       </div>
-      <p className=" font-OpenSans text-center pt-8 text-base w-[50%] mx-auto ">
+      <p className=" font-OpenSans text-center pt-8 font-medium text-base w-[60%] mx-auto ">
         I'm Jonathan Mmadu, a Frontend Developer specializing in crafting
         beautiful websites and web applications. With over a year of dedicated
         learning in Front-End technologies, I've found my place in the industry.
         Fluent in spoken and written English, my passion for reading, from
         adventurous tales to captivating mystery novels, is truly satisfying.
       </p>
-      <div className="flex justify-center mt-10 ">
+      <div className="flex justify-center mt-12 ">
         <p className=" border-solid border-black px-8 py-1 text-base font-bold   border-r-[3px] border-l-[3px]   ">
           MORE
         </p>
@@ -25,7 +25,7 @@ export default function About() {
         <img src={Seperator} className="w-full" alt="" />
       </div>
 
-      <section className="flex justify-between px-[15%] mt-16  ">
+      <section className="flex justify-between px-[15%] mt-12  ">
         <div className="w-[45%] relative ">
           <h1 className=" font-Montserrat text-[1.3rem] font-bold tracking-[4px] ">
             DEVELOPMENT

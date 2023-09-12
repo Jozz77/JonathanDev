@@ -35,13 +35,13 @@ class ScrollToTop extends Component {
 
   render() {
     return (
-      <div onClick={this.scrollToTop}>
-        <section className="text-[1.5rem] flex justify-center font-bold">
+      <div onClick={this.scrollToTop} className=" ">
+        <section className="text-[1.5rem] flex justify-center font-bold hover:text-gray">
         <MdKeyboardDoubleArrowUp className="animate-bounce infinite cursor-pointer"  />
         </section>
         <button
           
-          className="scroll-to-top-button font-Montserrat font-bold mt-2 text-[0.95rem] "
+          className="scroll-to-top-button hover:text-gray font-Montserrat font-bold mt-2 text-[0.95rem] "
         >
           BACK TO TOP
         </button>

@@ -38,7 +38,7 @@ const BlogData = [
         link: 'https://medium.com/@prashantg9912/how-nextjs-13-4-will-change-front-end-development-883546209786/'
     },
     {
-        id: 3,
+        id: 5,
         img: React,
         author: 'Zipy',
         title: 'ReactJs vs VueJs: Which One Should You Choose in 2023',
