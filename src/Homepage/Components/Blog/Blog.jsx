@@ -33,7 +33,7 @@ export default function Blog() {
             <SwiperSlide key={blog.id}>
               <section className="relative h-full w-3/3 group">
                 <img src={blog.img} className="w-full" alt="" />
-                <div className="absolute flex flex-col items-center font-Montserrat justify-center bg-Secondary bg-opacity-50 bottom-0 right-0 top-0 left-0 bg-white w-full shadow-md transition-opacity duration-1000">
+                <div className="absolute flex flex-col items-center font-Montserrat justify-center bg-Secondary bg-opacity-60 bottom-0 right-0 top-0 left-0 bg-white w-full shadow-md transition-opacity duration-1000">
                   <div className="flex flex-col items-center absolute bottom-[10%] px-[2%]">
                     <p className="text-[0.7rem] font-semibold">written by {blog.author}</p>
                     <h1 className="text-[1.1rem] font-bold text-center mt-2">

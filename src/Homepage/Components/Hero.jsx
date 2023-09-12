@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Pic from "../Assets/Pic.png";
+import Pic from "../Assets/Pic4.svg";
 import { PiLinkedinLogoBold, PiTwitterLogoBold } from "react-icons/pi";
 import { FaGithub } from "react-icons/fa6";
 import { MdOutlineMailOutline } from "react-icons/md";
@@ -36,21 +36,21 @@ export default function Hero() {
         </Link>
 
         <div className="flex pt-8 gap-[3%] text-[1.5rem] ">
-          <Link to="" className="hover:text-gray ">
+          <Link to="https://github.com/Jozz77" target="_blank" className="hover:text-gray ">
             <FaGithub />
           </Link>
-          <Link to="" className="hover:text-gray ">
+          <Link to="https://www.linkedin.com/in/jonathan-mmadu-45a714219/" target="_blank" className="hover:text-gray ">
             <PiLinkedinLogoBold />
           </Link>
-          <Link to="" className="hover:text-gray ">
+          <Link to="https://twitter.com/JonathanOnyedi3" target="_blank" className="hover:text-gray ">
             <PiTwitterLogoBold />
           </Link>
-          <Link to="" className="hover:text-gray ">
+          <Link to="mailto:mmadujonathan@gmail.com" className="hover:text-gray ">
             <MdOutlineMailOutline />
           </Link>
         </div>
       </section>
-      <section className="w-[45%] ">
+      <section className="w-[40%] ">
         <img src={Pic} className="w-full" alt="" />
       </section>
     </div>

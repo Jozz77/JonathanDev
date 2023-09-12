@@ -42,7 +42,7 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    opacity: 0.9;
+    opacity: 1;
   }
   .blog-head{
     background-image: url('../src/Homepage/Assets/portfolio.png');
