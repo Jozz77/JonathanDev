@@ -18,7 +18,7 @@ const BlogData = [
         img: Best,
         author: 'P. Rehan',
         title: '6 Best Practices For Creating High-Quality React Apps',
-        description: 'You can build high-quality, maintainable, and scalable React apps by following these best...',
+        description: 'You can build high-quality, maintainable, and scalable React apps by following these be...',
         link: 'https://medium.com/@pinjarirehan/6-best-practices-for-creating-high-quality-react-apps-730746799e41'
     },
     {
@@ -26,7 +26,7 @@ const BlogData = [
         img: Libriaries,
         author: 'Naji0329',
         title: '16 Libraries You Should Know as a React Developer',
-        description: 'Being a modern React developer is not about knowing just React itself. To stay competitive, it...',
+        description: 'Being a modern React developer is not about knowing just React itself. To stay competiti...',
         link: 'https://medium.com/@naji0329/16-libraries-you-should-know-as-a-react-developer-ac6d9bbd775e'
     },
     {
@@ -34,7 +34,7 @@ const BlogData = [
         img: Next,
         author: 'Prashant Gupta',
         title: 'Next.js 13.4: A Game-Changer for Front-End Development!',
-        description: 'Vercel recently launched NextJs 13.4 Stable version as a serve-client front-end framework. But we...',
+        description: 'Vercel recently launched NextJs 13.4 Stable version as a serve-client front-end framework...',
         link: 'https://medium.com/@prashantg9912/how-nextjs-13-4-will-change-front-end-development-883546209786/'
     },
     {
@@ -42,7 +42,7 @@ const BlogData = [
         img: React,
         author: 'Zipy',
         title: 'ReactJs vs VueJs: Which One Should You Choose in 2023',
-        description: ' JavaScript has become the most popular and widely used scripting language for creating web applicat...',
+        description: ' JavaScript has become the most popular and widely used scripting language for creating web...',
         link: 'https://medium.com/@zipy-ai/reactjs-vs-vuejs-which-one-should-you-choose-in-2023-20307c6a0dc7'
     },
 ]

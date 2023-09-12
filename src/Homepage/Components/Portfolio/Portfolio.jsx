@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import PortfolioData from "./PortolioData";
-import Heading from "../../../Components/Header/Heading";
-import Button from "../../../Components/Header/Button";
+import Heading from "../../../Components/Heading";
+import Button from "../../../Components/Button";
 
 export default function Portfolio() {
   const [activeTab, setActiveTab] = useState("tab1"); // Set the default active tab
@@ -25,10 +25,10 @@ export default function Portfolio() {
   return (
     <div id="portfolio" className="bg-otherBlack text-whiteOther">
 
-      <section className="port-head bg-WhiteBoldText  py-8 text-Secondary ">
+      <section className="port-head bg-WhiteBoldText  py-6 lg:py-8 text-Secondary ">
       <Heading text='MY PORTFOLIO' />
+
       </section>
-      
       <section className="w-full text-WhiteBoldText">
         <div className="flex justify-center py-4 mb-4 ">
           <div
@@ -73,13 +73,13 @@ export default function Portfolio() {
                 key={portfolio.id}
                 onMouseEnter={() => handleMouseEnter(index)}
                 onMouseLeave={handleMouseLeave}
-                className="relative w-1/3 group"
+                className="relative w-1/2 lg:w-1/3 group"
               >
                 <img src={portfolio.img} className="w-full" alt="" />
                 <div className={`absolute flex justify-center font-Montserrat  bg-Secondary bg-opacity-60 bottom-0 right-0 top-0 left-0 bg-white p-4 w-full shadow-md transition-opacity duration-1000 ${
                     !isHovered ? "opacity-100" : "opacity-0"
                   }`}>
-                <h1 className="text-[1.6rem] absolute bottom-[10%] font-bold tracking-[5px] mt-1">
+                <h1 className="text-[1.6rem] lg:text-[1.4rem] xl:text-[1.6rem] absolute bottom-[10%] font-bold tracking-[5px] mt-1">
                     {portfolio.title}
                   </h1>
                 </div>
@@ -89,10 +89,10 @@ export default function Portfolio() {
                   }`}
                 >
                   <p className="text-[0.7rem] font-semibold">coded</p>
-                  <h1 className="text-[1.6rem] font-bold tracking-[5px] mt-1">
+                  <h1 className="text-[1.6rem] lg:text-[1.4rem] xl:text-[1.6rem] font-bold tracking-[5px] mt-1">
                     {portfolio.title}
                   </h1>
-                  <p className="text-[0.7rem] px-[15%] text-center font-medium mt-4">
+                  <p className="text-[0.7rem] px-[10%] lg:px-[15%] text-center font-medium mt-2 lg:mt-4">
                     {portfolio.description}
                   </p>
                   <Link to={portfolio.link} target="_blank" className="">
@@ -114,13 +114,13 @@ export default function Portfolio() {
             key={portfolio.id}
             onMouseEnter={() => handleMouseEnter(index)}
             onMouseLeave={handleMouseLeave}
-            className="relative w-1/3 group"
+            className="relative w-1/2 lg:w-1/3 group"
           >
             <img src={portfolio.img} className="w-full" alt="" />
             <div className={`absolute flex justify-center font-Montserrat  bg-Secondary bg-opacity-60 bottom-0 right-0 top-0 left-0 bg-white p-4 w-full shadow-md transition-opacity duration-1000 ${
                     !isHovered ? "opacity-100" : "opacity-0"
                   }`}>
-                <h1 className="text-[1.6rem] absolute bottom-[10%] font-bold tracking-[5px] mt-1">
+                <h1 className="text-[1.6rem] lg:text-[1.4rem] xl:text-[1.6rem] absolute bottom-[10%] font-bold tracking-[5px] mt-1">
                     {portfolio.title}
                   </h1>
                 </div>
@@ -130,10 +130,10 @@ export default function Portfolio() {
               }`}
             >
               <p className="text-[0.7rem] font-semibold">coded</p>
-              <h1 className="text-[1.6rem] font-bold tracking-[5px] mt-1">
+              <h1 className="text-[1.6rem] lg:text-[1.4rem] xl:text-[1.6rem] font-bold tracking-[5px] mt-1">
                 {portfolio.title}
               </h1>
-              <p className="text-[0.7rem] px-[15%] text-center font-medium mt-4">
+              <p className="text-[0.7rem] px-[10%] lg:px-[15%] text-center font-medium mt-2 lg:mt-4">
                 {portfolio.description}
               </p>
               <Link to={portfolio.link} target="_blank" className="">
@@ -156,13 +156,13 @@ export default function Portfolio() {
             key={portfolio.id}
             onMouseEnter={() => handleMouseEnter(index)}
             onMouseLeave={handleMouseLeave}
-            className="relative w-1/3 group"
+            className="relative w-1/2 lg:w-1/3 group"
           >
             <img src={portfolio.img} className="w-full" alt="" />
             <div className={`absolute flex justify-center font-Montserrat  bg-Secondary bg-opacity-60 bottom-0 right-0 top-0 left-0 bg-white p-4 w-full shadow-md transition-opacity duration-1000 ${
                     !isHovered ? "opacity-100" : "opacity-0"
                   }`}>
-                <h1 className="text-[1.6rem] absolute bottom-[10%] font-bold tracking-[5px] mt-1">
+                <h1 className="text-[1.6rem] lg:text-[1.4rem] xl:text-[1.6rem] absolute bottom-[10%] font-bold tracking-[5px] mt-1">
                     {portfolio.title}
                   </h1>
                 </div>
@@ -172,10 +172,10 @@ export default function Portfolio() {
               }`}
             >
               <p className="text-[0.7rem] font-semibold">coded</p>
-              <h1 className="text-[1.6rem] font-bold tracking-[5px] mt-1">
+              <h1 className="text-[1.6rem] lg:text-[1.4rem] xl:text-[1.6rem] font-bold tracking-[5px] mt-1">
                 {portfolio.title}
               </h1>
-              <p className="text-[0.7rem] px-[15%] text-center font-medium mt-4">
+              <p className="text-[0.7rem] px-[10%] lg:px-[15%] text-center font-medium mt-2 lg:mt-4">
                 {portfolio.description}
               </p>
               <Link to={portfolio.link} target="_blank" className="">
@@ -191,7 +191,7 @@ export default function Portfolio() {
   )}
 
 
-      <section className="text-[1.1rem] font-Montserrat font-semibold text-center py-4">
+      <section className="text-[1rem] lg:text-[1.1rem] font-Montserrat font-semibold text-center py-4">
         <p>And many more to come!</p>
       </section>
     </div>

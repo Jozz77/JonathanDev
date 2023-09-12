@@ -10,7 +10,7 @@ export default function Footer() {
   return (
     <div className=' bg-Secondary font-Montserrat pt-8 text-WhiteBoldText flex flex-col justify-center text-center py-8 '>
         <ScrollToTop />
-        <section className="flex justify-center pt-8 gap-[1.5%] text-[1.5rem] ">
+        <section className="flex justify-center pt-8 gap-[2%] lg:gap-[1.5%] text-[1.5rem] ">
             <Link to="https://github.com/Jozz77" target="_blank" className="hover:text-gray ">
                 <FaGithub />
             </Link >
