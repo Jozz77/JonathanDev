@@ -10,7 +10,7 @@ export default function Hero() {
     <div className="px-[5%] md:px-[7%] lg:px-[10%] pt-[5rem] md:pt-[6rem] lg:pt-[7rem] xl:pt-[8rem] pb-6 md:pb-8 lg:pb-10 xl:pb-12 hero flex flex-col sm:flex-row justify-between items-center ">
       <section className="flex font-Montserrat flex-col w-full md:w-[50%] lg:w-[45%]  ">
         <p className="text-[0.9rem] ssm:text-[1rem] sm:text-[0.9rem] md:text-[1rem] lg:text-[1.1rem] xl:text-[1.3rem] font-bold ">Welcome to my portfolio! I'm </p>
-        <div className=" mt-3 sm:mt-4 lg:mt-6 flex text-[1.7rem] ssm:text-[2rem] sm:text-[1.8rem] md:text-[2rem] lg:text-[2.2rem] xl:text-[2.5rem]  font-bold ">
+        <div className=" mt-3 sm:mt-4 lg:mt-6 flex text-[1.8rem] ssm:text-[2rem] sm:text-[1.8rem] md:text-[2rem] lg:text-[2.2rem] xl:text-[2.5rem]  font-bold ">
           <h1>Jo</h1>
           <h1>
             <Typewriter
