@@ -41,7 +41,7 @@ class ScrollToTop extends Component {
         </section>
         <button
           
-          className="scroll-to-top-button hover:text-gray font-Montserrat font-bold mt-2 text-[0.95rem] "
+          className="scroll-to-top-button hover:text-gray font-Montserrat font-bold mt-2 text-[0.85rem] sm:text-[0.95rem] "
         >
           BACK TO TOP
         </button>

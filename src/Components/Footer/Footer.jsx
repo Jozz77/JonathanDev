@@ -8,9 +8,9 @@ import { MdOutlineMailOutline } from 'react-icons/md';
 export default function Footer() {
     const currentYear = new Date().getFullYear();
   return (
-    <div className=' bg-Secondary font-Montserrat pt-8 text-WhiteBoldText flex flex-col justify-center text-center py-8 '>
+    <div className=' bg-Secondary font-Montserrat pt-8 text-WhiteBoldText flex flex-col justify-center text-center py-6 sm:py-8 '>
         <ScrollToTop />
-        <section className="flex justify-center pt-8 gap-[2%] lg:gap-[1.5%] text-[1.5rem] ">
+        <section className="flex justify-center pt-8 gap-[4%] ssm:gap-[3%] sm:gap-[2%] lg:gap-[1.5%] text-[1.3rem] ssm:text-[1.5rem] ">
             <Link to="https://github.com/Jozz77" target="_blank" className="hover:text-gray ">
                 <FaGithub />
             </Link >
@@ -24,7 +24,7 @@ export default function Footer() {
                 <MdOutlineMailOutline />
             </Link>
         </section>
-        <p className="text-[0.9rem] pt-8 ">@{currentYear} Jo_Na_Than. All Rights Reserved.</p>
+        <p className="text-[0.8rem] ssm:text-[0.9rem] pt-8 ">@{currentYear} Jo_Na_Than. All Rights Reserved.</p>
     </div>
   )
 }

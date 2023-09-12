@@ -7,18 +7,18 @@ import Maint from "./Assets/Maint.png";
 export default function About() {
   return (
     <div id="about" className="about pb-8 lg:pb-10 xl:pb-12">
-      <div className=" pt-8 lg:pt-10 xl:pt-12">
+      <div className=" pt-6 md:pt-8 lg:pt-10 xl:pt-12">
         <Heading text="ABOUT ME" />
       </div>
-      <p className=" font-OpenSans text-center pt-6 lg:pt-8 font-medium text-[0.9rem]  lg:text-[0.95rem] xl:text-base w-[60%] mx-auto ">
+      <p className=" font-OpenSans text-justify sm:text-center pt-4 md:pt-6 lg:pt-8 font-medium text-[0.85rem] ssm:text-[0.9rem] lg:text-[0.95rem] xl:text-base w-[80%] ssm:w-[70%] md:w-[60%] mx-auto ">
         I'm Jonathan Mmadu, a Frontend Developer specializing in crafting
         beautiful websites and web applications. With over a year of dedicated
         learning in Front-End technologies, I've found my place in the industry.
         Fluent in spoken and written English, my passion for reading, from
         adventurous tales to captivating mystery novels, is truly satisfying.
       </p>
-      <div className="flex justify-center pt-8 lg:pt-10 xl:pt-12 ">
-        <p className=" border-solid border-black px-8 py-1 text-[0.9rem]  lg:text-[0.95rem] xl:text-base font-bold   border-r-[3px] border-l-[3px]   ">
+      <div className="flex justify-center pt-6 md:pt-8 lg:pt-10 xl:pt-12 ">
+        <p className=" border-solid border-black px-6 sm:px-8 py-1 text-[0.85rem] ssm:text-[0.9rem]  lg:text-[0.95rem] xl:text-base font-bold   border-r-[3px] border-l-[3px]   ">
           MORE
         </p>
       </div>
@@ -26,12 +26,12 @@ export default function About() {
         <Seperator />
       </div>
 
-      <section className="flex justify-between px-[10%] lg:px-[15%] pt-10 xl:pt-12  ">
-        <div className="w-[47%] xl:w-[45%] relative ">
-          <h1 className=" font-Montserrat text-[1.1rem] lg:text-[1.2rem] xl:text-[1.3rem] font-bold tracking-[4px] ">
+      <section className="flex flex-col sm:flex-row items-center sm:justify-between px-[0%] ssm:px-[5%] md:px-[10%] lg:px-[15%] pt-8 sm:pt-10 xl:pt-12  ">
+        <div className="w-[80%] ssm:w-[70%] sm:w-[47%] xl:w-[45%] relative ">
+          <h1 className=" font-Montserrat text-[1rem] ssm:text-[1.1rem] lg:text-[1.2rem] xl:text-[1.3rem] font-bold tracking-[4px] ">
             DEVELOPMENT
           </h1>
-          <p className=" pt-2 font-OpenSans text-[0.85rem] lg:text-[0.9rem] font-base ">
+          <p className=" pt-2 font-OpenSans text-justify sm:text-left text-[0.85rem] md:text-[0.85rem] lg:text-[0.9rem] font-base ">
             Drawing from my experience, I possess the capability to proficiently
             engineer websites, whether it's one I've developed myself or one
             provided by you, ensuring they are not only fully functional but
@@ -42,11 +42,11 @@ export default function About() {
           </div>
         </div>
 
-        <div className="  w-[47%] xl:w-[45%] relative ">
-          <h1 className=" font-Montserrat text-[1.1rem] lg:text-[1.2rem] xl:text-[1.3rem] font-bold tracking-[4px] ">
+        <div className=" w-[80%] ssm:w-[70%] sm:w-[47%] xl:w-[45%] relative ">
+          <h1 className=" mt-4 sm:mt-0 font-Montserrat text-[1rem] ssm:text-[1.1rem] lg:text-[1.2rem] xl:text-[1.3rem] font-bold tracking-[4px] ">
             MAINTENANCE
           </h1>
-          <p className="pt-2 font-OpenSans text-[0.9rem] font-base ">
+          <p className="pt-2 font-OpenSans text-justify sm:text-left text-[0.85rem] md:text-[0.85rem] font-base ">
             If any issues arise or if there's a need for enhancements, I am
             well-equipped to implement new features and innovative solutions to
             address them promptly.
