@@ -25,13 +25,11 @@ export default function Work() {
         >
           <p className="pt-2 underline-offset-8">HNGi9 Internship</p>
         </Link>
-        <Link
-          to=""
-          target="_blank"
-          className=" font-Montserrat font-semibold hover:text-gray underline text-[0.8rem] ssm:text-[0.85rem] sm:text-[0.75rem] md:text-[0.85rem]  lg:text-[0.9rem] xl:text-[0.95rem]"
-        >
-          <p className="pt-2">Zuri I4G Internship</p>
-        </Link>
+        
+          
+
+          <p className=" pt-2 font-Montserrat font-semibold  text-[0.8rem] ssm:text-[0.85rem] sm:text-[0.75rem] md:text-[0.85rem]  lg:text-[0.9rem] xl:text-[0.95rem]">Zuri I4G Internship</p>
+
       </section>
     </div>
   );
