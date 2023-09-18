@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-scroll";
+import { NavLink } from "react-router-dom";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,7 +17,7 @@ export default function Header() {
     <header className="bg-Primary overflow-hidden z-10 fixed top-0 w-full py-2 sm:py-3 xl:py-4">
       <div className="sm:flex sm:justify-between md:items-center px-[5%] md:px-[7%] lg:px-[10%]">
         <div className="flex items-center justify-between">
-          <div className="hover:text-gray text-[1.4rem] cursor-pointer sm:text-[1.3rem] md:text-[1.5rem] lg:text-[1.7rem] xl:text-[2rem] font-Montserrat font-bold ">
+          <div className=" text-[1.4rem] cursor-pointer sm:text-[1.3rem] md:text-[1.5rem] lg:text-[1.7rem] xl:text-[2rem] font-Montserrat font-bold ">
             
             <Link
               to="hero"
@@ -64,7 +65,7 @@ export default function Header() {
             isOpen
               ? "h-[100vh] transition-h duration-1000 ease-in-out"
               : " h-0 sm:h-full duration-500"
-          } sm:flex justify-between items-center w-full sm:w-[65%] md:w-[60%] xl:w-[50%]  font-Montserrat font-bold text-[0.85rem] md:text-[0.9rem] lg:text-[1rem] overflow-hidden`}
+          } sm:flex justify-between items-center w-full sm:w-[65%] md:w-[70%] xl:w-[60%]  font-Montserrat font-bold text-[0.85rem] md:text-[0.9rem] lg:text-[1rem] overflow-hidden`}
         >
           {/* Desktop navigation links */}
           <div className="hidden sm:flex justify-between items-center w-[100%] font-Montserrat font-bold text-[0.85rem] md:text-[0.9rem] lg:text-[1rem]">
@@ -84,8 +85,15 @@ export default function Header() {
               offset={-80} // Desktop offset
               className="block text-white hover:text-gray cursor-pointer"
             >
-              Portfolio
+              Projects
             </Link>
+            <NavLink
+              to="https://drive.google.com/file/d/1-2z2oJZV5kgxGq1VcXdhc9zNyvYNSG7i/view?usp=share_link"
+              className="block text-white hover:text-gray cursor-pointer"
+              target="_blank"
+            >
+              My Resume
+            </NavLink>
             <Link
               to="blog"
               smooth={true}

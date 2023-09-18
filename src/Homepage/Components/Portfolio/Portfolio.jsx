@@ -49,7 +49,7 @@ export default function Portfolio() {
       className="bg-otherBlack text-whiteOther"
     >
       <section className="port-head bg-WhiteBoldText  py-4 ssm:py-6 lg:py-8 text-Secondary ">
-        <Heading text="MY PORTFOLIO" />
+        <Heading text="MY PROJECTS" />
       </section>
       <section className="w-full text-WhiteBoldText">
         <div className="flex flex-wrap justify-center py-2 sm:py-4 mb-0 sm:mb-4 ">
@@ -85,9 +85,9 @@ export default function Portfolio() {
           </div>
         </div>
       </section>
-      <section className="port-body">
+      <section className=" bg-gray p-2">
         {activeTab === "tab1" && (
-          <div className="flex gap-y-1 flex-wrap">
+          <div className="flex justify-between gap-y-2 flex-wrap">
             {PortfolioData.map((portfolio, index) => {
               const isHovered = index === hoveredIndex;
               return (
@@ -95,7 +95,7 @@ export default function Portfolio() {
                   key={portfolio.id}
                   onMouseEnter={() => handleMouseEnter(index)}
                   onMouseLeave={handleMouseLeave}
-                  className="relative w-1/1 sm:w-1/2 lg:w-1/3 group"
+                  className="relative w-1/1 sm:w-[49.5%] lg:w-[32.85%] group"
                 >
                   <img src={portfolio.img} className="w-full" alt="" />
                   <div
@@ -132,7 +132,7 @@ export default function Portfolio() {
         )}
 
         {activeTab === "tab2" && (
-          <div className="flex gap-y-1 flex-wrap">
+          <div className="flex justify-between gap-y-2 flex-wrap">
             {PortfolioData.filter(
               (portfolio) => portfolio.isPersonalProject
             ).map((portfolio, index) => {
@@ -142,7 +142,7 @@ export default function Portfolio() {
                   key={portfolio.id}
                   onMouseEnter={() => handleMouseEnter(index)}
                   onMouseLeave={handleMouseLeave}
-                  className="relative w-1/1 sm:w-1/2 lg:w-1/3 group"
+                  className="relative w-1/1 sm:w-[49.5%] lg:w-[32.85%] group"
                 >
                   <img src={portfolio.img} className="w-full" alt="" />
                   <div
@@ -179,7 +179,7 @@ export default function Portfolio() {
         )}
 
         {activeTab === "tab3" && (
-          <div className="flex gap-y-1 flex-wrap">
+          <div className="flex justify-start gap-2 flex-wrap">
             {PortfolioData.filter(
               (portfolio) => !portfolio.isPersonalProject
             ).map((portfolio, index) => {
@@ -189,7 +189,7 @@ export default function Portfolio() {
                   key={portfolio.id}
                   onMouseEnter={() => handleMouseEnter(index)}
                   onMouseLeave={handleMouseLeave}
-                  className="relative w-1/1 sm:w-1/2 lg:w-1/3 group"
+                  className="relative w-1/1 sm:w-[49.5%] lg:w-[32.85%] group"
                 >
                   <img src={portfolio.img} className="w-full" alt="" />
                   <div

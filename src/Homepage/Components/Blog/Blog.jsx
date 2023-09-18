@@ -36,7 +36,7 @@ export default function Blog() {
       className="bg-Secondary text-WhiteBoldText mt-8 lg:mt-10 xl:mt-12"
     >
       <section className="blog-head py-4 ssm:py-6 lg:py-8 text-Secondary">
-        <Heading text="MY BLOG" />
+        <Heading text="BLOG" />
       </section>
 
       <section className="hidden lg:block">

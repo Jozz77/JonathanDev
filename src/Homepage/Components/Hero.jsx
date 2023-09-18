@@ -1,9 +1,8 @@
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 import Pic from "../Assets/Pic.webp";
 import { PiLinkedinLogoBold, PiTwitterLogoBold } from "react-icons/pi";
 import { FaGithub } from "react-icons/fa6";
 import { MdOutlineMailOutline } from "react-icons/md";
-import Typewriter from "typewriter-effect";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -33,16 +32,7 @@ export default function Hero() {
     >
       <section className="flex font-Montserrat flex-col w-full md:w-[50%] lg:w-[45%]  ">
         <div className="text-[0.9rem] flex ssm:text-[1rem] sm:text-[0.9rem] md:text-[1rem] lg:text-[1.1rem] xl:text-[1.3rem] font-bold ">
-          <p className="">Welcome to m</p>
-          <p>
-            <Typewriter
-              options={{
-                autoStart: true,
-                loop: true,
-                strings: ["y portfolio! I'm"],
-              }}
-            />
-          </p>
+          <p className="">Welcome to my portfolio! I'm</p>
         </div>
         <div className=" mt-3 sm:mt-4 lg:mt-6 text-[1.8rem] ssm:text-[2rem] sm:text-[1.8rem] md:text-[2rem] lg:text-[2.2rem] xl:text-[2.5rem]  font-bold ">
           <h1>Jonathan Mmadu</h1>
@@ -51,12 +41,14 @@ export default function Hero() {
           A Frontend Developer
         </small>
         <Link
-          to="https://drive.google.com/file/d/1-2z2oJZV5kgxGq1VcXdhc9zNyvYNSG7i/view?usp=share_link"
+          to="portfolio"
+          smooth={true}
+          duration={500}
+          offset={-80} // Desktop offset
           className=" mt-5 sm:mt-6 lg:mt-8 font-semibold font-Raleway"
-          target="_blank"
         >
           <button className=" border-solid border-black px-3 ssm:px-4 sm:px-2 md:px-4 py-1 ssm:py-2 sm:py-1 md:py-2 text-[0.75rem] ssm:text-[0.8rem]  md:text-[0.9rem] lg:text-[0.95rem] xl:text-base font-bold border-[3px] hover:text-gray hover:border-gray  ">
-            DOWNLOAD CV
+            SEE MY PROJECTS
           </button>
         </Link>
 
