@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Pic from "../Assets/Pic2.png";
+import Pic from "../Assets/Pic.webp";
 import { PiLinkedinLogoBold, PiTwitterLogoBold } from "react-icons/pi";
 import { FaGithub } from "react-icons/fa6";
 import { MdOutlineMailOutline } from "react-icons/md";

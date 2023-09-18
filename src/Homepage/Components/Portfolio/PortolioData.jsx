@@ -1,14 +1,14 @@
-import WordPress1 from "./Assets/WordPress1.png";
+import WordPress1 from "./Assets/WordPress1.webp";
 import WordPress2 from "./Assets/WordPress2.png";
 import Res1 from "./Assets/Res1.png";
 import Res2 from "./Assets/Res2.png";
-import Bake1 from "./Assets/Bake1.png";
+import Bake1 from "./Assets/Bake1.webp";
 import Bake2 from "./Assets/Bake2.png";
-import Klyn1 from "./Assets/Klyn1.png";
+import Klyn1 from "./Assets/Klyn1.webp";
 import Klyn2 from "./Assets/Klyn2.png";
 import Dodov1 from "./Assets/Dodov1.png";
 import Dodov2 from "./Assets/Dodov2.png";
-import Skriper1 from "./Assets/Skriper1.png";
+import Skriper1 from "./Assets/Skriper1.webp";
 import Skriper2 from "./Assets/Skriper2.png";
 
 
