@@ -60,7 +60,7 @@ export default function Hero() {
           </button>
         </Link>
 
-        <div className="flex pt-4 ssm:pt-6 md:pt-8 gap-[5%] md:gap-[4%] xl:gap-[3%] text-[1.1rem] ssmtext-[1.2rem] md:text-[1.4rem] xl:text-[1.5rem] ">
+        <div className="flex pt-4 ssm:pt-6 md:pt-8 gap-[5%] md:gap-[4%] xl:gap-[3%] text-[1.3rem] ssm:text-[1.4rem] md:text-[1.5rem] xl:text-[1.5rem] ">
           <Link
             to="https://github.com/Jozz77"
             target="_blank"
