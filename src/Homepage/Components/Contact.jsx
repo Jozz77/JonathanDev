@@ -1,12 +1,37 @@
+import { useEffect } from "react";
 import Heading from "../../Components/Heading";
 import Seperator from "../../Components/Seperator";
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+// ..
+
 
 export default function Contact() {
+  useEffect(() => {
+    AOS.init({
+      startEvent: "DOMContentLoaded", // name of the event dispatched on the document, that AOS should initialize on
+      useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+      // initClassName: 'contact', // class applied after initialization
+      animatedClassName: "contact", // class applied on animation
+      once: false, // whether animation should happen only once - while scrolling down
+    });
+  }, []);
+
+  useEffect(() => {
+    AOS.refresh();
+  }, []);
   return (
-    <div id="contact" className="contact pt-8 lg:pt-10 xl:pt-12 ">
+    <div
+      data-aos="fade-up"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="1000"
+      data-aos-once={false}
+      id="contact"
+      className="contact pt-8 lg:pt-10 xl:pt-12 "
+    >
       <section>
         <div>
-          <Heading text='CONTACT' />
+          <Heading text="CONTACT" />
         </div>
         <p className=" font-OpenSans text-center pt-4 lg:pt-6 xl:pt-8 text-[0.85rem] ssm:text-[0.9rem] sm:text-base w-[80%] sm:w-[70%] md:w-[60%] lg:w-[50%] mx-auto ">
           Discover endless possibilities. Your journey begins with a simple
@@ -61,5 +86,7 @@ export default function Contact() {
         </div>
       </form>
     </div>
+    
   );
+
 }

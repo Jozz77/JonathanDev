@@ -1,12 +1,35 @@
 import Heading from "../../../Components/Heading";
 import Seperator from "../../../Components/Seperator";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 import Dev from "./Assets/Dev.png";
 import Maint from "./Assets/Maint.png";
 
 export default function About() {
+  useEffect(() => {
+    AOS.init({
+      startEvent: "DOMContentLoaded", // name of the event dispatched on the document, that AOS should initialize on
+      useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+      // initClassName: 'contact', // class applied after initialization
+      animatedClassName: "hero", // class applied on animation
+      once: false, // whether animation should happen only once - while scrolling down
+    });
+  }, []);
+
+  useEffect(() => {
+    AOS.refresh();
+  }, []);
+
   return (
-    <div id="about" className="about pb-8 lg:pb-10 xl:pb-12">
+    <div
+      data-aos="fade-up"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="1000"
+      data-aos-once={false}
+      id="about"
+      className="about  pb-8 lg:pb-10 xl:pb-12"
+    >
       <div className=" pt-6 md:pt-8 lg:pt-10 xl:pt-12">
         <Heading text="ABOUT ME" />
       </div>

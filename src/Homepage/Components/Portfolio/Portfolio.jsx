@@ -3,8 +3,25 @@ import { Link } from "react-router-dom";
 import PortfolioData from "./PortolioData";
 import Heading from "../../../Components/Heading";
 import Button from "../../../Components/Button";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 export default function Portfolio() {
+  useEffect(() => {
+    AOS.init({
+      startEvent: "DOMContentLoaded", // name of the event dispatched on the document, that AOS should initialize on
+      useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+      // initClassName: 'contact', // class applied after initialization
+      animatedClassName: "hero", // class applied on animation
+      once: false, // whether animation should happen only once - while scrolling down
+    });
+  }, []);
+
+  useEffect(() => {
+    AOS.refresh();
+  }, []);
+
   const [activeTab, setActiveTab] = useState("tab1"); // Set the default active tab
 
   const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -22,7 +39,14 @@ export default function Portfolio() {
   };
 
   return (
-    <div id="portfolio" className="bg-otherBlack  text-whiteOther">
+    <div
+      data-aos="zoom-in-up"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="1000"
+      data-aos-once={false}
+      id="portfolio"
+      className="bg-otherBlack text-whiteOther"
+    >
       <section className="port-head bg-WhiteBoldText  py-4 ssm:py-6 lg:py-8 text-Secondary ">
         <Heading text="MY PORTFOLIO" />
       </section>
