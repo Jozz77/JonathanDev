@@ -25,10 +25,10 @@ export default function Hero() {
 
   return (
     <div
-    data-aos="fade-down"
-    data-aos-easing="ease-out-cubic"
-    data-aos-duration="1000"
-    data-aos-once={false}
+      data-aos="zoom-in-down"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="1000"
+      data-aos-once={false}
       className="hero px-[5%] md:px-[7%] lg:px-[10%] pt-[5rem] md:pt-[6rem] lg:pt-[7rem] xl:pt-[8rem] pb-6 md:pb-8 lg:pb-10 xl:pb-12  flex flex-col sm:flex-row justify-between items-center "
     >
       <section className="flex font-Montserrat flex-col w-full md:w-[50%] lg:w-[45%]  ">

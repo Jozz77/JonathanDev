@@ -30,7 +30,7 @@ export default function Blog() {
     <div
       data-aos="slide-up"
       data-aos-easing="ease-out-cubic"
-      data-aos-duration="500"
+      data-aos-duration="1000"
       data-aos-once={false}
       id="blog"
       className="bg-Secondary text-WhiteBoldText mt-8 lg:mt-10 xl:mt-12"

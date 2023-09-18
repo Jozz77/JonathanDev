@@ -23,7 +23,7 @@ export default function About() {
 
   return (
     <div
-      data-aos="fade-up"
+      data-aos="zoom-in-right"
       data-aos-easing="ease-out-cubic"
       data-aos-duration="1000"
       data-aos-once={false}
