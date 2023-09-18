@@ -22,7 +22,7 @@ export default function Contact() {
   }, []);
   return (
     <div
-      data-aos="zoom-in-left"
+      data-aos="zoom-in-right"
       data-aos-easing="ease-out-cubic"
       data-aos-duration="1000"
       data-aos-once={false}

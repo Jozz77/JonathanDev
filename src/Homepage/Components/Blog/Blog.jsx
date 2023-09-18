@@ -18,7 +18,7 @@ export default function Blog() {
       startEvent: "DOMContentLoaded", // name of the event dispatched on the document, that AOS should initialize on
       useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
       // initClassName: 'contact', // class applied after initialization
-      animatedClassName: "hero", // class applied on animation
+      animatedClassName: "blog-head", // class applied on animation
       once: false, // whether animation should happen only once - while scrolling down
     });
   }, []);
@@ -28,7 +28,7 @@ export default function Blog() {
   }, []);
   return (
     <div
-      data-aos="slide-up"
+      data-aos="fade-up"
       data-aos-easing="ease-out-cubic"
       data-aos-duration="1000"
       data-aos-once={false}

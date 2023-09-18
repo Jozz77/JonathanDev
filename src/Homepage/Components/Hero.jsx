@@ -16,6 +16,7 @@ export default function Hero() {
       // initClassName: 'contact', // class applied after initialization
       animatedClassName: "hero", // class applied on animation
       once: false, // whether animation should happen only once - while scrolling down
+      delay: 200,
     });
   }, []);
 
