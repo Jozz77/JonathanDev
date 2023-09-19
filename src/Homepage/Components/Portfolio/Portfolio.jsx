@@ -109,7 +109,7 @@ export default function Portfolio() {
                   </div>
                   <div
                     className={`absolute flex flex-col items-center font-Montserrat justify-center bg-Secondary bg-opacity-80 bottom-0 right-0 top-0 left-0 bg-white p-4 w-full shadow-md transition-opacity duration-1000 ${
-                      isHovered ? "opacity-100" : "opacity-0"
+                      isHovered ? "opacity-100 " : "opacity-0"
                     }`}
                   >
                     <p className="text-[0.8rem] ssm:text-[0.8rem] sm:text-[0.7rem] font-semibold">

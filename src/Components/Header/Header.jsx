@@ -18,14 +18,14 @@ export default function Header() {
       <div className="sm:flex sm:justify-between md:items-center px-[5%] md:px-[7%] lg:px-[10%]">
         <div className="flex items-center justify-between">
           <div className=" text-[1.4rem] cursor-pointer sm:text-[1.3rem] md:text-[1.5rem] lg:text-[1.7rem] xl:text-[2rem] font-Montserrat font-bold ">
-            
             <Link
               to="hero"
               smooth={true}
               duration={500}
               offset={-80} // Desktop offset
-              
-            >Jo_Na_Than</Link>
+            >
+              Jo_Na_Than
+            </Link>
           </div>
           <div className=" sm:hidden">
             <button
@@ -87,13 +87,6 @@ export default function Header() {
             >
               Projects
             </Link>
-            <NavLink
-              to="https://drive.google.com/file/d/1-2z2oJZV5kgxGq1VcXdhc9zNyvYNSG7i/view?usp=share_link"
-              className="block text-white hover:text-gray cursor-pointer"
-              target="_blank"
-            >
-              My Resume
-            </NavLink>
             <Link
               to="blog"
               smooth={true}
@@ -110,10 +103,16 @@ export default function Header() {
               offset={-80} // Desktop offset
               className="block text-white hover:text-gray cursor-pointer"
             >
-              <button className=" border-solid border-black px-2 md:px-4 py-1 md:py-2 font-bold border-[3px] hover:text-gray hover:border-gray  ">
-                CONTACT ME
-              </button>
+              Contact Me
             </Link>
+            <NavLink
+              to="https://drive.google.com/file/d/1-2z2oJZV5kgxGq1VcXdhc9zNyvYNSG7i/view?usp=share_link"
+              className="block text-white hover:text-gray cursor-pointer"
+            >
+              <button className=" border-solid border-black px-2 md:px-4 py-1 md:py-2 font-bold border-[3px] hover:text-gray hover:border-gray  ">
+                DOWNLOAD CV
+              </button>
+            </NavLink>
           </div>
           {/* Mobile navigation links */}
           <div className="flex flex-col pt-12 gap-y-8 justify-center items-center text-[1.1rem] font-Montserrat font-bold sm:hidden">
