@@ -46,12 +46,12 @@ export default function Portfolio() {
       data-aos-duration="1000"
       data-aos-once={false}
       id="portfolio"
-      className="bg-otherBlack text-whiteOther"
+      className=" port-body text-whiteOther"
     >
-      <section className="port-head bg-WhiteBoldText  py-4 ssm:py-6 lg:py-8 text-Secondary ">
-        <Heading text="MY PROJECTS" />
+      <section className="  py-4 ssm:py-6 lg:py-8 text-Secondary ">
+        <Heading text="PROJECTS" />
       </section>
-      <section className="w-full text-WhiteBoldText">
+      <section className="w-full bg-otherBlack text-WhiteBoldText">
         <div className="flex flex-wrap justify-center py-2 sm:py-4 mb-0 sm:mb-4 ">
           <div
             onClick={() => handleTabClick("tab1")}
@@ -85,7 +85,7 @@ export default function Portfolio() {
           </div>
         </div>
       </section>
-      <section className=" bg-gray p-2">
+      <section className="  p-2">
         {activeTab === "tab1" && (
           <div className="flex justify-between gap-y-2 flex-wrap">
             {PortfolioData.map((portfolio, index) => {
@@ -226,7 +226,7 @@ export default function Portfolio() {
         )}
       </section>
 
-      <section className="text-[0.8rem] sm:text-[0.9rem] md:text-[1rem] lg:text-[1.1rem] font-Montserrat font-semibold text-center py-2 sm:py-4">
+      <section className="bg-otherBlack text-[0.8rem] sm:text-[0.9rem] md:text-[1rem] lg:text-[1.1rem] font-Montserrat font-semibold text-center py-2 sm:py-4">
         <p>And many more to come!</p>
       </section>
     </div>

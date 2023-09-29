@@ -33,9 +33,9 @@ export default function Blog() {
       data-aos-duration="1000"
       data-aos-once={false}
       id="blog"
-      className="bg-Secondary text-WhiteBoldText mt-8 lg:mt-10 xl:mt-12"
+      className="port-body text-WhiteBoldText mt-8 lg:mt-10 xl:mt-12"
     >
-      <section className="blog-head py-4 ssm:py-6 lg:py-8 text-Secondary">
+      <section className=" py-4 ssm:py-6 lg:py-8 text-Secondary">
         <Heading text="BLOG" />
       </section>
 
