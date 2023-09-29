@@ -6,6 +6,7 @@ import { MdOutlineMailOutline } from "react-icons/md";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { NavLink } from "react-router-dom";
 
 export default function Hero() {
   useEffect(() => {
@@ -37,7 +38,7 @@ export default function Hero() {
         <div className=" mt-3 sm:mt-4 lg:mt-6 text-[1.8rem] ssm:text-[2rem] sm:text-[1.8rem] md:text-[2rem] lg:text-[2.2rem] xl:text-[2.5rem]  font-bold ">
           <h1>Jonathan Mmadu</h1>
         </div>
-        <small className="  text-gray text-[0.8rem] ssm:text-[0.9rem] sm:text-[0.8rem] md:text-[0.9rem] lg:text-[0.95rem] xl:text-[1rem] font-extrabold ">
+        <small className="  text-gray text-[0.8rem] ssm:text-[0.9rem] sm:text-[0.8rem] md:text-[0.9rem] lg:text-[1rem] xl:text-[1.1rem] font-extrabold ">
           A Frontend Developer
         </small>
         <Link
@@ -53,33 +54,33 @@ export default function Hero() {
         </Link>
 
         <div className="flex pt-4 ssm:pt-6 md:pt-8 gap-[5%] md:gap-[4%] xl:gap-[3%] text-[1.3rem] ssm:text-[1.4rem] md:text-[1.5rem] xl:text-[1.5rem] ">
-          <Link
+          <NavLink
             to="https://github.com/Jozz77"
             target="_blank"
             className="hover:text-gray "
           >
             <FaGithub />
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             to="https://www.linkedin.com/in/jonathan-mmadu-45a714219/"
             target="_blank"
             className="hover:text-gray "
           >
             <PiLinkedinLogoBold />
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             to="https://twitter.com/JonathanOnyedi3"
             target="_blank"
             className="hover:text-gray "
           >
             <PiTwitterLogoBold />
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             to="mailto:mmadujonathan@gmail.com"
             className="hover:text-gray "
           >
             <MdOutlineMailOutline />
-          </Link>
+          </NavLink>
         </div>
       </section>
       <section className="w-[70%] sm:w-[40%] mt-10 sm:mt-0 mx-auto sm:mx-0 ">
