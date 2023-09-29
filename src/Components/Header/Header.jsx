@@ -110,7 +110,7 @@ export default function Header() {
               className="block text-white hover:text-gray cursor-pointer"
             >
               <button className=" border-solid border-black px-2 md:px-4 py-1 md:py-2 font-bold border-[3px] hover:text-gray hover:border-gray  ">
-                DOWNLOAD CV
+                VISIT RESUME
               </button>
             </NavLink>
           </div>
