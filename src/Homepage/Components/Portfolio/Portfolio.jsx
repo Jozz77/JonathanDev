@@ -87,7 +87,7 @@ export default function Portfolio() {
       </section>
       <section className="  p-2">
         {activeTab === "tab1" && (
-          <div className="flex justify-between gap-y-2 flex-wrap">
+          <div className="flex justify-between gap-y-4 flex-wrap">
             {PortfolioData.map((portfolio, index) => {
               const isHovered = index === hoveredIndex;
               return (

@@ -106,7 +106,8 @@ export default function Header() {
               Contact Me
             </Link>
             <NavLink
-              to="https://drive.google.com/file/d/1-2z2oJZV5kgxGq1VcXdhc9zNyvYNSG7i/view?usp=share_link"
+              target="_blank"
+              to="https://drive.google.com/file/d/18LniJIjIE57xRdbfebx-qaGg2Eo6NeTp/view?usp=sharing"
               className="block text-white hover:text-gray cursor-pointer"
             >
               <button className=" border-solid border-black px-2 md:px-4 py-1 md:py-2 font-bold border-[3px] hover:text-gray hover:border-gray  ">
@@ -134,7 +135,7 @@ export default function Header() {
               className="block text-white hover:text-gray cursor-pointer"
               onClick={handleMobileSectionClick}
             >
-              Portfolio
+              Projects
             </Link>
             <Link
               to="blog"
@@ -154,10 +155,18 @@ export default function Header() {
               className="block text-white hover:text-gray cursor-pointer"
               onClick={handleMobileSectionClick}
             >
-              <button className=" border-solid border-black px-2 md:px-4 py-1 md:py-2 font-bold border-[3px] hover:text-gray hover:border-gray  ">
-                CONTACT ME
-              </button>
+              Contact
             </Link>
+            <NavLink
+               target="_blank"
+               to="https://drive.google.com/file/d/18LniJIjIE57xRdbfebx-qaGg2Eo6NeTp/view?usp=sharing"
+              className="block text-white hover:text-gray cursor-pointer"
+              onClick={handleMobileSectionClick}
+            >
+              <button className=" border-solid border-black px-2 md:px-4 py-1 md:py-2 font-bold border-[3px] hover:text-gray hover:border-gray  ">
+                MY RESUME
+              </button>
+            </NavLink>
           </div>
         </nav>
       </div>
