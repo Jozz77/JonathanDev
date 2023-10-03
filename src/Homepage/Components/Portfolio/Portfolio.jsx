@@ -146,7 +146,7 @@ export default function Portfolio() {
                 >
                   <img src={portfolio.img} className="w-full" alt="" />
                   <div
-                    className={`absolute flex justify-center font-Montserrat  bg-Secondary bg-opacity-10 bottom-0 right-0 top-0 left-0 bg-white p-4 w-full shadow-md transition-opacity duration-1000 ${
+                    className={`absolute flex justify-center font-Montserrat bg-Secondary bg-opacity-10 bottom-0 right-0 top-0 left-0 bg-white p-4 w-full shadow-md transition-opacity duration-1000 ${
                       !isHovered ? "opacity-100" : "opacity-0"
                     }`}
                   >
