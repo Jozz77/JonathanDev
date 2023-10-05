@@ -46,7 +46,7 @@ export default function Portfolio() {
       data-aos-duration="1000"
       data-aos-once={false}
       id="portfolio"
-      className=" port-body text-whiteOther"
+      className="  text-whiteOther"
     >
       <section className="  py-4 ssm:py-6 lg:py-8 text-Secondary ">
         <Heading text="PROJECTS" />
