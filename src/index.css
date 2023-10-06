@@ -12,6 +12,11 @@
 /* font-family: 'Open Sans', sans-serif; */
 /* font-family: 'Raleway', sans-serif; */
 
+*{
+  /* border: 0; */
+  padding: 0;
+  margin: 0;
+}
 header, .homepage, .port-body {
     background: radial-gradient(50% 50% at 50% 50%, rgba(26, 21, 21, 0.00) 0%, rgba(1, 1, 1, 0.16) 100%), #FFF;
 }
@@ -72,3 +77,17 @@ header, .homepage, .port-body {
   opacity: 1;
   transform: translateY(0);
 }
+.hero-intro{
+  background: rgba(0, 0, 0, 0.56);
+}
+  .hero-intro::before{
+    content: '';
+  position: absolute;
+  top: -20px; /* Adjust this value to control the height of the triangle */
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent; /* Adjust the width of the triangle */
+  border-right: 50px solid transparent; /* Adjust the width of the triangle */
+  border-bottom: 20px solid #007bff; /* Match the background color */
+  }

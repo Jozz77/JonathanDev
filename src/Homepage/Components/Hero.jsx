@@ -36,7 +36,7 @@ export default function Hero() {
         <div className="text-[0.9rem] flex ssm:text-[1rem] sm:text-[0.9rem] md:text-[1rem] lg:text-[1.1rem] xl:text-[1.3rem] font-bold ">
           <p className="">Welcome to my portfolio! I'm</p>
         </div>
-        <div className=" mt-3 sm:mt-4 lg:mt-6 text-[1.8rem] ssm:text-[2rem] sm:text-[1.8rem] md:text-[2rem] lg:text-[2.2rem] xl:text-[2.5rem]  font-bold ">
+        <div className=" mt-3 sm:mt-4 lg:mt-6 text-[1.8rem] ssm:text-[2rem] sm:text-[1.8rem] md:text-[2rem] lg:text-[2.2rem] xl:text-[2.8rem]  font-bold ">
           <h1>Jonathan Mmadu</h1>
         </div>
         <small className="  text-gray text-[0.8rem] ssm:text-[0.9rem] sm:text-[0.8rem] md:text-[0.9rem] lg:text-[1rem] xl:text-[1.1rem] font-extrabold ">
@@ -86,9 +86,60 @@ export default function Hero() {
       </section>
 
       {/* mobile section starts */}
-      <section className="block sm:hidden">
-        
+      <section className="hero-intro overflow-hidden font-Raleway flex text-WhiteBoldText px-[5%] py-6 flex-col absolute bottom-0 w-[100%] sm:hidden">
+      <div className="text-[0.75rem] flex ssm:text-[0.8rem] font-bold ">
+          <p className="">Welcome to my portfolio! I'm</p>
+        </div>
+        <div className="text-[1.7rem] font-bold ">
+          <h1>Jonathan Mmadu</h1>
+        </div>
+        <small className="  text-[0.75rem] ssm:text-[0.8rem] leading-normal font-extrabold ">
+          A Frontend Developer
+        </small>
+        {/* <Link
+          to="portfolio"
+          smooth={true}
+          duration={500}
+          offset={-80} // Desktop offset
+          className=" mt-2 font-semibold font-Raleway"
+        >
+          <button className=" border-solid border-black px-3 ssm:px-4  py-1 ssm:py-2  text-[0.75rem] ssm:text-[0.8rem] font-bold border-[3px] hover:text-gray hover:border-gray  ">
+            SEE MY PROJECTS
+          </button>
+        </Link> */}
+
+        <div className=" absolute right-[5%] top-[50%] translate-y-[-50%] flex flex-col  gap-2 text-[1.3rem]  sm:hidden ">
+          <NavLink
+            to="https://github.com/Jozz77"
+            target="_blank"
+            className="hover:text-gray "
+          >
+            <FaGithub />
+          </NavLink>
+          <NavLink
+            to="https://www.linkedin.com/in/jonathan-mmadu-45a714219/"
+            target="_blank"
+            className="hover:text-gray "
+          >
+            <PiLinkedinLogoBold />
+          </NavLink>
+          <NavLink
+            to="https://twitter.com/JonathanOnyedi3"
+            target="_blank"
+            className="hover:text-gray "
+          >
+            <PiTwitterLogoBold />
+          </NavLink>
+          <NavLink
+            to="mailto:mmadujonathan@gmail.com"
+            className="hover:text-gray "
+          >
+            <MdOutlineMailOutline />
+          </NavLink>
+        </div>
       </section>
+
+      
       {/* mobile section ends */}
 
       <section className="w-[100%] sm:w-[50%] flex items-end mt-10 sm:mt-0 mx-auto sm:mx-0 ">

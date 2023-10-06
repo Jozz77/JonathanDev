@@ -27,9 +27,9 @@ export default function Work() {
     >
       <section className=" w-full sm:w-[47.5%]  md:w-[45%] ">
         <h1 className=" text-[0.9rem] ssm:text-[1rem] sm:text-[0.9rem] md:text-[1rem] lg:text-[1.15rem] xl:text-[1.2rem] font-bold tracking-[3px] sm:tracking-[2px] md:tracking-[5px]] ">
-          SKILLS
+          TECHNICAL SKILLS
         </h1>
-        <p className=" font-Montserrat pt-2 text-[0.8rem] ssm:text-[0.85rem] sm:text-[0.75rem] md:text-[0.85rem]  lg:text-[0.9rem] xl:text-[0.95rem]">
+        <p className=" font-Montserrat pt-0 sm:pt-1 text-[0.8rem] ssm:text-[0.85rem] sm:text-[0.75rem] md:text-[0.85rem]  lg:text-[0.9rem] xl:text-[0.95rem]">
           I'm good with HTML, CSS, JavaScript, React JS, Tailwind, SCSS, Git and
           Github etc.
         </p>
@@ -38,7 +38,18 @@ export default function Work() {
       <section>
         <hr className="hidden sm:block border-solid border-WhiteBoldText border-[1px] h-full " />
       </section>
+
       <section className="mt-4 sm:mt-0 w-full sm:w-[47.5%]  md:w-[45%] ">
+        <h1 className=" text-[0.9rem] ssm:text-[1rem] sm:text-[0.9rem] md:text-[1rem] lg:text-[1.15rem] xl:text-[1.2rem] font-bold tracking-[3px] sm:tracking-[2px] md:tracking-[5px]] ">
+          SOFT SKILLS
+        </h1>
+        <p className=" font-Montserrat pt-0 sm:pt-1 text-[0.8rem] ssm:text-[0.85rem] sm:text-[0.75rem] md:text-[0.85rem]  lg:text-[0.9rem] xl:text-[0.95rem]">
+          Effective Communication, Creative Problem Solving, Strong Team
+          Collaboration, Responsive Web Design Expertise, Adaptability in
+          Diverse Environments, Creative Thinking, and Empathetic Approach
+        </p>
+      </section>
+      {/* <section className="mt-4 sm:mt-0 w-full sm:w-[47.5%]  md:w-[45%] ">
         <h1 className="text-[0.9rem] ssm:text-[1rem] sm:text-[0.9rem] md:text-[1rem] lg:text-[1.15rem] xl:text-[1.2rem] font-bold tracking-[3px] sm:tracking-[2px] md:tracking-[5px] ">
           EDUCATION AND CERTIFICATES
         </h1>
@@ -53,7 +64,7 @@ export default function Work() {
         <p className=" pt-2 font-Montserrat font-semibold  text-[0.8rem] ssm:text-[0.85rem] sm:text-[0.75rem] md:text-[0.85rem]  lg:text-[0.9rem] xl:text-[0.95rem]">
           Zuri I4G Internship
         </p>
-      </section>
+      </section> */}
     </div>
   );
 }
