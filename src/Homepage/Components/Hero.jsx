@@ -30,7 +30,7 @@ export default function Hero() {
       data-aos-easing="ease-out-cubic"
       data-aos-duration="1000"
       data-aos-once={false}
-      className=" relative hero px-[5%] md:px-[7%] lg:px-[10%] pt-[4rem] sm:pt-[5rem] md:pt-[6rem] lg:pt-[7rem] xl:pt-[6rem] pb-0 md:pb-0  flex flex-col sm:flex-row justify-between items-center "
+      className=" relative hero px-[5%] md:px-[7%] lg:px-[10%] pt-[5rem] md:pt-[6rem] lg:pt-[7rem] xl:pt-[6rem] pb-0 md:pb-0  flex flex-col sm:flex-row justify-between items-center "
     >
       <section className=" sm:flex font-Montserrat flex flex-col w-full md:w-[50%] lg:w-[45%]  ">
         <div className="text-[0.9rem] flex ssm:text-[1rem] sm:text-[0.9rem] md:text-[1rem] lg:text-[1.1rem] xl:text-[1.3rem] font-bold ">
