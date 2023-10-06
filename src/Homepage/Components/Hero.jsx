@@ -142,7 +142,7 @@ export default function Hero() {
       
       {/* mobile section ends */}
 
-      <section className="w-[100%] sm:w-[50%] flex items-end mt-10 sm:mt-0 mx-auto sm:mx-0 ">
+      <section className="w-[100%] sm:w-[50%] flex items-end mt-5 sm:mt-0 mx-auto sm:mx-0 ">
         <img src={Pic2} className="w-full" alt="" />
       </section>
     </div>

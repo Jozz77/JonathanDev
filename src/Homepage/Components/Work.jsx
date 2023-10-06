@@ -26,10 +26,10 @@ export default function Work() {
       className="work text-WhiteBoldText flex flex-col sm:flex-row justify-between px-[5%] py-6 font-OpenSans"
     >
       <section className=" w-full sm:w-[47.5%]  md:w-[45%] ">
-        <h1 className=" text-[1rem] sm:text-[0.9rem] md:text-[1rem] lg:text-[1.15rem] xl:text-[1.2rem] font-bold tracking-[3px] sm:tracking-[2px] md:tracking-[5px]] ">
+        <h1 className=" text-[1.05rem] sm:text-[1.1rem] md:text-[1rem] lg:text-[1.15rem] xl:text-[1.2rem] font-extrabold tracking-[3px] sm:tracking-[2px] md:tracking-[5px]] ">
           TECHNICAL SKILLS
         </h1>
-        <p className=" font-Montserrat pt-0 sm:pt-1 text-[0.8rem] ssm:text-[0.85rem] sm:text-[0.75rem] md:text-[0.85rem]  lg:text-[0.9rem] xl:text-[0.95rem]">
+        <p className=" font-Montserrat pt-1 sm:pt-1 text-[0.8rem] ssm:text-[0.85rem] sm:text-[0.75rem] md:text-[0.85rem]  lg:text1.1rem] xl:text-[0.95rem]">
           I'm good with HTML, CSS, JavaScript, React JS, Tailwind, SCSS, Git and
           Github etc.
         </p>
@@ -40,10 +40,10 @@ export default function Work() {
       </section>
 
       <section className="mt-4 sm:mt-0 w-full sm:w-[47.5%]  md:w-[45%] ">
-        <h1 className=" text-[1rem] sm:text-[0.9rem] md:text-[1rem] lg:text-[1.15rem] xl:text-[1.2rem] font-extrabold tracking-[3px] sm:tracking-[2px] md:tracking-[5px]] ">
+        <h1 className=" text-[1.05rem] sm:text-[1.1rem] md:text-[1rem] lg:text-[1.15rem] xl:text-[1.2rem] font-extrabold tracking-[3px] sm:tracking-[2px] md:tracking-[5px]] ">
           SOFT SKILLS
         </h1>
-        <p className=" font-Montserrat pt-0 sm:pt-1 text-[0.8rem] ssm:text-[0.85rem] sm:text-[0.75rem] md:text-[0.85rem]  lg:text-[0.9rem] xl:text-[0.95rem]">
+        <p className=" font-Montserrat pt-1 sm:pt-1 text-[0.8rem] ssm:text-[0.85rem] sm:text-[0.75rem] md:text-[0.85rem]  lg:text-[0.9rem] xl:text-[0.95rem]">
           Effective Communication, Creative Problem Solving, Strong Team
           Collaboration, Responsive Web Design Expertise, Adaptability in
           Diverse Environments, Creative Thinking, and Empathetic Approach
