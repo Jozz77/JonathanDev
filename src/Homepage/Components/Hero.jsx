@@ -30,9 +30,9 @@ export default function Hero() {
       data-aos-easing="ease-out-cubic"
       data-aos-duration="1000"
       data-aos-once={false}
-      className=" relative hero px-[5%] md:px-[7%] lg:px-[10%] pt-[1.5rem] sm:pt-[5rem] md:pt-[6rem] lg:pt-[7rem] xl:pt-[6rem] pb-0 md:pb-0  flex flex-col sm:flex-row justify-between items-center "
+      className=" relative hero px-[5%] md:px-[7%] lg:px-[10%] pt-[4rem] sm:pt-[5rem] md:pt-[6rem] lg:pt-[7rem] xl:pt-[6rem] pb-0 md:pb-0  flex flex-col sm:flex-row justify-between items-center "
     >
-      <section className=" hidden sm:flex font-Montserrat flex-col w-full md:w-[50%] lg:w-[45%]  ">
+      <section className=" sm:flex font-Montserrat flex flex-col w-full md:w-[50%] lg:w-[45%]  ">
         <div className="text-[0.9rem] flex ssm:text-[1rem] sm:text-[0.9rem] md:text-[1rem] lg:text-[1.1rem] xl:text-[1.3rem] font-bold ">
           <p className="">Welcome to my portfolio! I'm</p>
         </div>
@@ -86,7 +86,7 @@ export default function Hero() {
       </section>
 
       {/* mobile section starts */}
-      <section className="hero-intro overflow-hidden font-Raleway flex text-WhiteBoldText px-[5%] py-6 flex-col absolute bottom-0 w-[100%] sm:hidden">
+      <section className="hidden hero-intro overflow-hidden font-Raleway flex text-WhiteBoldText px-[5%] py-6 flex-col absolute bottom-0 w-[100%] sm:hidden">
       <div className="text-[0.75rem] flex ssm:text-[0.8rem] font-bold ">
           <p className="">Welcome to my portfolio! I'm</p>
         </div>
