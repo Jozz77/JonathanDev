@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Heading from "../../Components/Heading";
 import Seperator from "../../Components/Seperator";
+import { useForm } from "react-hook-form";
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 // ..
@@ -23,7 +24,7 @@ export default function Contact() {
   const [isLoading, setIsLoading] = useState(false); // State variable to track loading
   const [isSubmitted, setIsSubmitted] = useState(false); // State variable to submit form
 
-  const handleSubmit = (e) => {
+  const onSubmit = (e) => {
     e.preventDefault();
 
     // Set isLoading to true when the form is submitted
@@ -39,6 +40,33 @@ export default function Contact() {
       console.log("Form submitted!");
     }, 2000); // Simulated 2-second delay
   };
+
+    // form validation
+    const { register, handleSubmit, formState: { errors } } = useForm({
+      mode: "onBlur"
+    });
+    const handleError = (errors) => {};
+  
+    const registerOptions = {
+      name: {
+        required: "Your mame is required please.",
+        minLength: {
+          value: 3,
+          message: "Name must have at least 3 characters"
+        }
+    },
+    number: {},
+      email: {
+        required: "Email is required",
+        pattern: {
+          value: /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
+          message: "Entered value does not match email format"
+        }
+        },
+      message: {
+        required: "Please a message is required",
+      }
+    };
 
   return (
     <div
@@ -64,7 +92,7 @@ export default function Contact() {
       </section>
 
       <form
-        onSubmit={handleSubmit}
+         onSubmit={handleSubmit(onSubmit, handleError)}
         action=""
         className=" font-Montserrat bg-none text-Secondary py-8 lg:py-10 xl:py-12 w-[80%] sm:w-[60%] md:w-[50%] lg:w-[40%] mx-auto "
       >
@@ -74,7 +102,11 @@ export default function Contact() {
           name="name"
           placeholder="ENTER YOUR NAME*"
           id=""
+          {...register('name', registerOptions.name) }
         />
+         <small className="text-[red] ">
+              {errors?.name && errors.name.message}
+            </small>
 
         <input
           className="w-full mt-8 xl:mt-10  text-[0.8rem] sm:text-[0.85rem] lg:text-[0.9rem]  placeholder:text-[0.8rem] placeholder:sm:text-[0.85rem] placeholder:lg:text-[0.9rem] focus:border-gray placeholder:text-gray px-[4%] ssm:px-[2%] py-2 bg-[transparent] border-solid border-b-[4px] border-l-[4px] border-Secondary outline-none "
@@ -82,7 +114,11 @@ export default function Contact() {
           name="email"
           placeholder="ENTER YOUR EMAIL*"
           id=""
+          {...register('email', registerOptions.email) }
         />
+         <small className="text-[red] ">
+              {errors?.email && errors.email.message}
+            </small>
 
         <input
           className="w-full mt-8 xl:mt-10 text-[0.8rem] sm:text-[0.85rem] lg:text-[0.9rem]  placeholder:text-[0.8rem] placeholder:sm:text-[0.85rem] placeholder:lg:text-[0.9rem] focus:border-gray placeholder:text-gray px-[4%] ssm:px-[2%] py-2 bg-[transparent] border-solid border-b-[4px] border-l-[4px] border-Secondary outline-none "
@@ -90,6 +126,7 @@ export default function Contact() {
           name="number"
           placeholder="PHONE NUMBER"
           id=""
+          {...register('number', registerOptions.number) }
         />
 
         <textarea
@@ -98,7 +135,11 @@ export default function Contact() {
           name="name"
           placeholder="YOUR MESSAGE* "
           id=""
+          {...register('message', registerOptions.message) }
         />
+         <small className="text-[red] ">
+              {errors?.message && errors.message.message}
+            </small>
 
         <div className="flex justify-center mt-3 sm:mt-4 xl:mt-6">
           {isLoading ? (
