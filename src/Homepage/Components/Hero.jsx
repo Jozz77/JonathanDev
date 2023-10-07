@@ -26,7 +26,7 @@ export default function Hero() {
 
   return (
     <div
-      data-aos="zoom-in-up"
+      data-aos="zoom-out-up"
       data-aos-easing="ease-out-cubic"
       data-aos-duration="1000"
       data-aos-once={false}
