@@ -1,7 +1,8 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Heading from "../../Components/Heading";
 import Seperator from "../../Components/Seperator";
 import { useForm } from "react-hook-form";
+import emailjs from '@emailjs/browser';
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 // ..
@@ -21,52 +22,74 @@ export default function Contact() {
     AOS.refresh();
   }, []);
 
+  const form = useRef();
+
   const [isLoading, setIsLoading] = useState(false); // State variable to track loading
   const [isSubmitted, setIsSubmitted] = useState(false); // State variable to submit form
 
-  const onSubmit = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-
-    // Set isLoading to true when the form is submitted
     setIsLoading(true);
 
-    // Simulate an API call or form submission delay (you can replace this with your actual submission logic)
-    setTimeout(() => {
-      // After the submission is complete, set isLoading back to false
-      setIsLoading(false);
+    emailjs.sendForm('service_prpkq5j', 'template_0wd8eaa', form.current, 'zfjNcVHR7ZKlJ9cLQ')
+    .then((result) => {
+        console.log(result.text);
+        setIsLoading(false);
       setIsSubmitted(true);
+    }, (error) => {
+        console.log(error.text);
+        setIsLoading(false);
+    });
 
-      // Reset the form or perform any other necessary actions
-      console.log("Form submitted!");
-    }, 2000); // Simulated 2-second delay
+    // emailjs
+    //   .sendForm('service_prpkq5j', 'template_0wd8eaa', e.target, 'YOUR_USER_ID')
+    //   .then((result) => {
+    //     console.log('Email sent successfully:', result.text);
+    //   })
+    //   .catch((error) => {
+    //     console.error('Error sending email:', error);
+    //   });
+
+    // // Set isLoading to true when the form is submitted
+    // setIsLoading(true);
+
+    // // Simulate an API call or form submission delay (you can replace this with your actual submission logic)
+    // setTimeout(() => {
+    //   // After the submission is complete, set isLoading back to false
+    //   setIsLoading(false);
+    //   setIsSubmitted(true);
+
+    //   // Reset the form or perform any other necessary actions
+    //   console.log("Form submitted!");
+    // }, 2000); // Simulated 2-second delay
   };
 
     // form validation
-    const { register, handleSubmit, formState: { errors } } = useForm({
-      mode: "onBlur"
-    });
-    const handleError = (errors) => {};
+    // const { register, handleSubmit, formState: { errors } } = useForm({
+    //   mode: "onBlur"
+    // });
+    // const handleError = (errors) => {};
   
-    const registerOptions = {
-      name: {
-        required: "Your mame is required please.",
-        minLength: {
-          value: 3,
-          message: "Name must have at least 3 characters"
-        }
-    },
-    number: {},
-      email: {
-        required: "Email is required",
-        pattern: {
-          value: /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
-          message: "Entered value does not match email format"
-        }
-        },
-      message: {
-        required: "Please a message is required",
-      }
-    };
+    // const registerOptions = {
+    //   name: {
+    //     required: "Please input Your Name",
+    //     minLength: {
+    //       value: 3,
+    //       message: "Name must have at least 3 characters"
+    //     }
+    // },
+    // number: {},
+    //   email: {
+    //     required: "Please input Your Email",
+    //     pattern: {
+    //       value: /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
+    //       message: "Please input a valid email"
+    //     }
+    //     },
+    //   message: {
+    //     required: "Please input Your Message",
+    //   }
+    // };
 
   return (
     <div
@@ -92,7 +115,8 @@ export default function Contact() {
       </section>
 
       <form
-         onSubmit={handleSubmit(onSubmit, handleError)}
+        ref={form}
+         onSubmit={handleSubmit}
         action=""
         className=" font-Montserrat bg-none text-Secondary py-8 lg:py-10 xl:py-12 w-[80%] sm:w-[60%] md:w-[50%] lg:w-[40%] mx-auto "
       >
@@ -102,10 +126,10 @@ export default function Contact() {
           name="name"
           placeholder="ENTER YOUR NAME*"
           id=""
-          {...register('name', registerOptions.name) }
+          // {...register('name', registerOptions.name) }
         />
          <small className="text-[red] ">
-              {errors?.name && errors.name.message}
+              {/* {errors?.name && errors.name.message} */}
             </small>
 
         <input
@@ -114,10 +138,10 @@ export default function Contact() {
           name="email"
           placeholder="ENTER YOUR EMAIL*"
           id=""
-          {...register('email', registerOptions.email) }
+          // {...register('email', registerOptions.email) }
         />
          <small className="text-[red] ">
-              {errors?.email && errors.email.message}
+              {/* {errors?.email && errors.email.message} */}
             </small>
 
         <input
@@ -126,19 +150,19 @@ export default function Contact() {
           name="number"
           placeholder="PHONE NUMBER"
           id=""
-          {...register('number', registerOptions.number) }
+          // {...register('number', registerOptions.number) }
         />
 
         <textarea
           className="w-full mt-8 xl:mt-10 text-[0.8rem] sm:text-[0.85rem] lg:text-[0.9rem] xt-[0.75rem] eholder:ssm:text-[0.8rem] placeholder:sm:text-[0.85rem] placeholder:lg:text-[0.9rem] focus:border-gray placeholder:text-gray px-[2%] pb-16 bg-[transparent] border-solid border-b-[4px] border-l-[4px] border-Secondary resize-none outline-none "
           type="text"
-          name="name"
+          name="message"
           placeholder="YOUR MESSAGE* "
           id=""
-          {...register('message', registerOptions.message) }
+          // {...register('message', registerOptions.message) }
         />
          <small className="text-[red] ">
-              {errors?.message && errors.message.message}
+              {/* {errors?.message && errors.message.message} */}
             </small>
 
         <div className="flex justify-center mt-3 sm:mt-4 xl:mt-6">
