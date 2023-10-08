@@ -4,32 +4,12 @@ import Pic2 from "../Assets/tyu 2.png";
 import { PiLinkedinLogoBold, PiTwitterLogoBold } from "react-icons/pi";
 import { FaGithub } from "react-icons/fa6";
 import { MdOutlineMailOutline } from "react-icons/md";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
 export default function Hero() {
-  useEffect(() => {
-    AOS.init({
-      startEvent: "DOMContentLoaded", // name of the event dispatched on the document, that AOS should initialize on
-      useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
-      // initClassName: 'contact', // class applied after initialization
-      animatedClassName: "hero", // class applied on animation
-      once: false, // whether animation should happen only once - while scrolling down
-    });
-  }, []);
-
-  useEffect(() => {
-    AOS.refresh();
-  }, []);
 
   return (
     <div
-      data-aos="zoom-out-up"
-      data-aos-easing="ease-out-cubic"
-      data-aos-duration="1000"
-      data-aos-once={false}
       className=" relative hero px-[5%] md:px-[7%] lg:px-[10%] pt-[5rem] md:pt-[6rem] lg:pt-[7rem] xl:pt-[6rem] pb-0 md:pb-0  flex flex-col sm:flex-row justify-between items-center "
     >
       <section className=" sm:flex font-Montserrat flex flex-col w-full md:w-[50%] lg:w-[45%]  ">
