@@ -4,6 +4,7 @@ import Seperator from "../../Components/Seperator";
 import emailjs from '@emailjs/browser';
 import AOS from "aos";
 import "aos/dist/aos.css";
+import SuccessModal from "./SuccessModal";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -13,9 +14,21 @@ export default function Contact() {
     message: "",
   });
 
+  const resetForm = () => {
+    setFormData({
+      name: "",
+      email: "",
+      number: "",
+      message: "",
+    });
+    setErrors({});
+  };
+
   const [errors, setErrors] = useState({});
   const [isLoading, setIsLoading] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -58,7 +71,8 @@ export default function Contact() {
         .then((result) => {
           console.log(result.text);
           setIsLoading(false);
-          setIsSubmitted(true);
+          setIsModalOpen(true);
+          resetForm();
         })
         .catch((error) => {
           console.log(error.text);
@@ -139,7 +153,7 @@ export default function Contact() {
         {/* Add similar input fields for other form fields here */}
         <input
           className="w-full mt-8 xl:mt-10 text-[0.8rem] sm:text-[0.85rem] lg:text-[0.9rem]  placeholder:text-[0.8rem] placeholder:sm:text-[0.85rem] placeholder:lg:text-[0.9rem] focus:border-gray placeholder:text-gray px-[4%] ssm:px-[2%] py-2 bg-[transparent] border-solid border-b-[4px] border-l-[4px] border-Secondary outline-none "
-          type="text"
+          type="number"
           name="number"
           placeholder="PHONE NUMBER"
           value={formData.number}
@@ -187,12 +201,8 @@ export default function Contact() {
             </button>
           )}
         </div>
-        <div className="flex justify-center font-bold mt-4">
-          {isSubmitted && (
-            <div>
-              Thanks for submitting!!!
-            </div>
-          )}
+        <div>
+        {isModalOpen && <SuccessModal onClose={() => setIsModalOpen(false)} />}
         </div>
       </form>
     </div>
