@@ -91,3 +91,10 @@ header, .homepage, .port-body {
   border-right: 50px solid transparent; /* Adjust the width of the triangle */
   border-bottom: 20px solid #007bff; /* Match the background color */
   }
+
+  input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}

@@ -1,10 +1,9 @@
 import { useEffect, useState } from "react";
 import Heading from "../../Components/Heading";
 import Seperator from "../../Components/Seperator";
-import emailjs from '@emailjs/browser';
+import emailjs from "@emailjs/browser";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import SuccessModal from "./SuccessModal";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -26,9 +25,7 @@ export default function Contact() {
 
   const [errors, setErrors] = useState({});
   const [isLoading, setIsLoading] = useState(false);
-  const [isSubmitted, setIsSubmitted] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
-
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -36,6 +33,8 @@ export default function Contact() {
       ...formData,
       [name]: value,
     });
+
+    setIsModalOpen(false);
   };
 
   const validateForm = () => {
@@ -52,7 +51,6 @@ export default function Contact() {
       newErrors.email = "Please input a valid email";
     }
 
-    // You can add more validation rules for other fields here.
     if (!formData.message.trim()) {
       newErrors.message = "Please input Your Message";
     }
@@ -62,12 +60,19 @@ export default function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    // setIsModalOpen(true);
     const newErrors = validateForm();
     if (Object.keys(newErrors).length === 0) {
       // No errors, proceed with form submission
       setIsLoading(true);
 
-      emailjs.sendForm('service_prpkq5j', 'template_0wd8eaa', e.target, 'zfjNcVHR7ZKlJ9cLQ')
+      emailjs
+        .sendForm(
+          "service_prpkq5j",
+          "template_0wd8eaa",
+          e.target,
+          "zfjNcVHR7ZKlJ9cLQ"
+        )
         .then((result) => {
           console.log(result.text);
           setIsLoading(false);
@@ -127,28 +132,28 @@ export default function Contact() {
         className="font-Montserrat bg-none text-Secondary py-8 lg:py-10 xl:py-12 w-[80%] sm:w-[60%] md:w-[50%] lg:w-[40%] mx-auto "
       >
         <input
-          className={`w-full mt-4 text-[0.8rem] sm:text-[0.85rem] lg:text-[0.9rem] placeholder:text-[0.8rem] placeholder:sm:text-[0.85rem] placeholder:lg:text-[0.9rem] focus:border-gray placeholder:text-gray px-[4%] ssm:px-[2%] py-2 bg-[transparent] border-solid border-b-[4px] border-l-[4px] border-Secondary outline-none ${errors.name ? 'border-red-500' : ''}`}
+          className={`w-full mt-4 text-[0.8rem] sm:text-[0.85rem] lg:text-[0.9rem] placeholder:text-[0.8rem] placeholder:sm:text-[0.85rem] placeholder:lg:text-[0.9rem] focus:border-gray placeholder:text-gray px-[4%] ssm:px-[2%] py-2 bg-[transparent] border-solid border-b-[4px] border-l-[4px] border-Secondary outline-none ${
+            errors.name ? "border-red-500" : ""
+          }`}
           type="text"
           name="name"
           placeholder="ENTER YOUR NAME*"
           value={formData.name}
           onChange={handleChange}
         />
-        <small className="text-[red]">
-          {errors.name && errors.name}
-        </small>
+        <small className="text-[red]">{errors.name && errors.name}</small>
 
         <input
-          className={`w-full mt-8 xl:mt-10  text-[0.8rem] sm:text-[0.85rem] lg:text-[0.9rem] placeholder:text-[0.8rem] placeholder:sm:text-[0.85rem] placeholder:lg:text-[0.9rem] focus:border-gray placeholder:text-gray px-[4%] ssm:px-[2%] py-2 bg-[transparent] border-solid border-b-[4px] border-l-[4px] border-Secondary outline-none ${errors.email ? 'border-red-500' : ''}`}
+          className={`w-full mt-8 xl:mt-10  text-[0.8rem] sm:text-[0.85rem] lg:text-[0.9rem] placeholder:text-[0.8rem] placeholder:sm:text-[0.85rem] placeholder:lg:text-[0.9rem] focus:border-gray placeholder:text-gray px-[4%] ssm:px-[2%] py-2 bg-[transparent] border-solid border-b-[4px] border-l-[4px] border-Secondary outline-none ${
+            errors.email ? "border-red-500" : ""
+          }`}
           type="text"
           name="email"
           placeholder="ENTER YOUR EMAIL*"
           value={formData.email}
           onChange={handleChange}
         />
-        <small className="text-[red]">
-          {errors.email && errors.email}
-        </small>
+        <small className="text-[red]">{errors.email && errors.email}</small>
 
         {/* Add similar input fields for other form fields here */}
         <input
@@ -168,11 +173,8 @@ export default function Contact() {
           value={formData.message}
           onChange={handleChange}
         />
-         <small className="text-[red]">
-          {errors.message && errors.message}
-        </small>
+        <small className="text-[red]">{errors.message && errors.message}</small>
 
-        
         <div className="flex justify-center mt-3 sm:mt-4 xl:mt-6">
           {isLoading ? (
             <button
@@ -201,9 +203,40 @@ export default function Contact() {
             </button>
           )}
         </div>
-        <div>
-        {isModalOpen && <SuccessModal onClose={() => setIsModalOpen(false)} />}
-        </div>
+        {isModalOpen && (
+          <div className="text-[green] text-center text-base sm:text-[1.2rem] lg:text-[1.3rem] font-Montserrat font-bold mt-2 sm:mt-4 ">
+            Thank you for submitting!
+          </div>
+        )}
+        {/* {isModalOpen && (
+          <div
+            className={`fixed top-0 left-0 right-0 bottom-0 bg-[#00000054]  flex items-center justify-center
+    transition-opacity duration-300 ease-in-out ${
+      isModalOpen ? "opacity-100" : "opacity-0 pointer-events-none"
+    }`}
+            onClick={() => setIsModalOpen(false)}
+          >
+            <div
+              className={` bg-WhiteBoldText rounded-lg shadow-lg p-4
+transform scale-100 opacity-100
+transition-transform duration-300 ease-in-out ${
+                isModalOpen ? "scale-100" : "scale-90"
+              } transform-gpu`}
+            >
+              <div className="p-4">
+                <h2 className="text-2xl font-semibold mb-4">
+                  Thank you for submitting!
+                </h2>
+                <button
+                  className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md"
+                  onClick={() => setIsModalOpen(false)}
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        )} */}
       </form>
     </div>
   );
