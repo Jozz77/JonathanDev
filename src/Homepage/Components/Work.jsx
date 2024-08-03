@@ -1,5 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
 import { useEffect } from "react";
-import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -30,7 +30,7 @@ export default function Work() {
           TECHNICAL SKILLS
         </h1>
         <p className=" font-Montserrat pt-1 sm:pt-1 text-[0.8rem] ssm:text-[0.85rem] sm:text-[0.75rem] md:text-[0.85rem]  lg:text1.1rem] xl:text-[0.95rem]">
-          I'm good with HTML, CSS, JavaScript, React JS, Tailwind, SCSS, Git and
+          I'm good with HTML, CSS, JavaScript, TypeScript, React, Next JS, Tailwind, SCSS, Redux, Git and
           Github etc.
         </p>
       </section>

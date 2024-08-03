@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import Heading from "../../../Components/Heading";
 import Seperator from "../../../Components/Seperator";
 import AOS from "aos";
@@ -36,7 +37,7 @@ export default function About() {
       </div>
       <p className=" font-OpenSans text-justify sm:text-center pt-4 md:pt-6 lg:pt-8 font-medium text-[0.85rem] ssm:text-[0.9rem] lg:text-[0.95rem] xl:text-base w-[80%] ssm:w-[70%] md:w-[60%] mx-auto ">
         I'm Jonathan Mmadu, a Frontend Developer specializing in crafting
-        beautiful websites and web applications. With over a year of dedicated
+        beautiful websites and web applications. With over 2 years of dedicated
         learning in Front-End technologies, I've found my place in the industry.
         Fluent in spoken and written English, my passion for reading, from
         adventurous tales to captivating mystery novels, is truly satisfying.
