@@ -30,7 +30,7 @@ export default function Header() {
           <div className=" sm:hidden">
             <button
               onClick={toggleMenu}
-              className="text-white hover:text-gray cursor-pointer"
+              className="text-black hover:text-gray cursor-pointer"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -68,13 +68,13 @@ export default function Header() {
           } sm:flex justify-between items-center w-full sm:w-[65%] md:w-[70%] xl:w-[60%]  font-Montserrat font-bold text-[0.85rem] md:text-[0.9rem] lg:text-[1rem] overflow-hidden`}
         >
           {/* Desktop navigation links */}
-          <div className="hidden sm:flex justify-between items-center w-[100%] font-Montserrat font-bold text-[0.85rem] md:text-[0.9rem] lg:text-[1rem]">
+          <div className="hidden sm:flex justify-between text-otherBlack items-center w-[100%] font-Montserrat font-bold text-[0.85rem] md:text-[0.9rem] lg:text-[1rem]">
             <Link
               to="about"
               smooth={true}
               duration={500}
               offset={-80} // Desktop offset
-              className="block text-white hover:text-gray cursor-pointer"
+              className="block text-black hover:text-gray cursor-pointer"
             >
               About me
             </Link>
@@ -83,7 +83,7 @@ export default function Header() {
               smooth={true}
               duration={500}
               offset={-80} // Desktop offset
-              className="block text-white hover:text-gray cursor-pointer"
+              className="block text-black hover:text-gray cursor-pointer"
             >
               Projects
             </Link>
@@ -92,7 +92,7 @@ export default function Header() {
               smooth={true}
               duration={500}
               offset={-80} // Desktop offset
-              className="block text-white hover:text-gray cursor-pointer"
+              className="block text-black hover:text-gray cursor-pointer"
             >
               Blog
             </Link>
@@ -101,14 +101,14 @@ export default function Header() {
               smooth={true}
               duration={500}
               offset={-80} // Desktop offset
-              className="block text-white hover:text-gray cursor-pointer"
+              className="block text-black hover:text-gray cursor-pointer"
             >
               Contact Me
             </Link>
             <NavLink
               target="_blank"
               to="https://drive.google.com/file/d/18LniJIjIE57xRdbfebx-qaGg2Eo6NeTp/view?usp=sharing"
-              className="block text-white hover:text-gray cursor-pointer"
+              className="block text-black hover:text-gray cursor-pointer"
             >
               <button className=" border-solid border-black px-2 md:px-4 py-1 md:py-2 font-bold border-[3px] hover:text-gray hover:border-gray  ">
                 MY RESUME
@@ -122,7 +122,7 @@ export default function Header() {
               smooth={true}
               duration={500}
               offset={-50}
-              className="block text-white hover:text-gray cursor-pointer"
+              className="block text-black hover:text-gray cursor-pointer"
               onClick={handleMobileSectionClick}
             >
               About me
@@ -132,7 +132,7 @@ export default function Header() {
               smooth={true}
               duration={500}
               offset={-50}
-              className="block text-white hover:text-gray cursor-pointer"
+              className="block text-black hover:text-gray cursor-pointer"
               onClick={handleMobileSectionClick}
             >
               Projects
@@ -142,7 +142,7 @@ export default function Header() {
               smooth={true}
               duration={500}
               offset={-50}
-              className="block text-white hover:text-gray cursor-pointer"
+              className="block text-black hover:text-gray cursor-pointer"
               onClick={handleMobileSectionClick}
             >
               Blog
@@ -152,7 +152,7 @@ export default function Header() {
               smooth={true}
               duration={500}
               offset={-50}
-              className="block text-white hover:text-gray cursor-pointer"
+              className="block text-black hover:text-gray cursor-pointer"
               onClick={handleMobileSectionClick}
             >
               Contact
@@ -160,7 +160,7 @@ export default function Header() {
             <NavLink
                target="_blank"
                to="https://drive.google.com/file/d/18LniJIjIE57xRdbfebx-qaGg2Eo6NeTp/view?usp=sharing"
-              className="block text-white hover:text-gray cursor-pointer"
+              className="block text-black hover:text-gray cursor-pointer"
               onClick={handleMobileSectionClick}
             >
               <button className=" border-solid border-black px-2 md:px-4 py-1 md:py-2 font-bold border-[3px] hover:text-gray hover:border-gray  ">

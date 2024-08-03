@@ -92,12 +92,14 @@ export default function Portfolio() {
               const isHovered = index === hoveredIndex;
               return (
                 <section
-                  key={portfolio.id}
+                  key={index}
                   onMouseEnter={() => handleMouseEnter(index)}
                   onMouseLeave={handleMouseLeave}
                   className="relative w-1/1 sm:w-[49.5%] lg:w-[32.85%] group"
                 >
-                  <img src={portfolio.img} className="w-full" alt="" />
+                  <div>
+                  <img src={portfolio.img} className="w-full h-[15rem] sm:h-auto object-contain " alt="" />
+                  </div>
                   <div
                     className={`absolute flex justify-center font-Montserrat  bg-Secondary bg-opacity-10 bottom-0 right-0 top-0 left-0 bg-white p-4 w-full shadow-md transition-opacity duration-1000 ${
                       !isHovered ? "opacity-100" : "opacity-0"
