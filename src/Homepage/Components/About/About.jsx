@@ -51,7 +51,7 @@ export default function About() {
         <Seperator />
       </div>
 
-      <section className="flex flex-col sm:flex-row items-center sm:justify-between px-[0%] ssm:px-[5%] md:px-[10%] lg:px-[15%] pt-8 sm:pt-10 xl:pt-12  ">
+      <section className="flex flex-col sm:flex-row items-center sm:items-start sm:justify-between px-[0%] ssm:px-[5%] md:px-[10%] lg:px-[15%] pt-8 sm:pt-10 xl:pt-12  ">
         <div className="w-[80%] ssm:w-[70%] sm:w-[47%] xl:w-[45%] relative ">
           <h1 className=" font-Montserrat text-[1rem] ssm:text-[1.1rem] lg:text-[1.2rem] xl:text-[1.3rem] font-bold tracking-[4px] ">
             DEVELOPMENT
