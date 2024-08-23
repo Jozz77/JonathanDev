@@ -1,6 +1,7 @@
+/* eslint-disable react/no-unescaped-entities */
 import { Link } from "react-scroll";
 // import Pic from "../Assets/Pic.webp";
-import Pic2 from "../Assets/tyu 2.png";
+import Pic2 from "../Assets/Jonathan.png";
 import { PiLinkedinLogoBold, PiTwitterLogoBold } from "react-icons/pi";
 import { FaGithub } from "react-icons/fa6";
 import { MdOutlineMailOutline } from "react-icons/md";
@@ -66,7 +67,7 @@ export default function Hero() {
       </section>
 
       {/* mobile section starts */}
-      <section className="hidden hero-intro overflow-hidden font-Raleway flex text-WhiteBoldText px-[5%] py-6 flex-col absolute bottom-0 w-[100%] sm:hidden">
+      <section className="hidden hero-intro overflow-hidden font-Raleway  text-WhiteBoldText px-[5%] py-6 flex-col absolute bottom-0 w-[100%] sm:hidden">
       <div className="text-[0.75rem] flex ssm:text-[0.8rem] font-bold ">
           <p className="">Welcome to my portfolio! I'm</p>
         </div>
