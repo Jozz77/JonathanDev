@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-scroll";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -65,7 +65,7 @@ export default function Header() {
             isOpen
               ? "h-[100vh] transition-h duration-1000 ease-in-out"
               : " h-0 sm:h-full duration-500"
-          } sm:flex justify-between items-center w-full sm:w-[65%] md:w-[70%] xl:w-[60%]  font-Montserrat font-bold text-[0.85rem] md:text-[0.9rem] lg:text-[1rem] overflow-hidden`}
+          } sm:flex justify-between items-center w-full sm:w-[50%] md:w-[55%] xl:w-[45%]  font-Montserrat font-bold text-[0.85rem] md:text-[0.9rem] lg:text-[1rem] overflow-hidden`}
         >
           {/* Desktop navigation links */}
           <div className="hidden sm:flex justify-between text-otherBlack items-center w-[100%] font-Montserrat font-bold text-[0.85rem] md:text-[0.9rem] lg:text-[1rem]">
@@ -105,7 +105,7 @@ export default function Header() {
             >
               Contact Me
             </Link>
-            <NavLink
+            {/* <NavLink
               target="_blank"
               to="https://drive.google.com/file/d/18LniJIjIE57xRdbfebx-qaGg2Eo6NeTp/view?usp=sharing"
               className="block text-black hover:text-gray cursor-pointer"
@@ -113,7 +113,7 @@ export default function Header() {
               <button className=" border-solid border-black px-2 md:px-4 py-1 md:py-2 font-bold border-[3px] hover:text-gray hover:border-gray  ">
                 MY RESUME
               </button>
-            </NavLink>
+            </NavLink> */}
           </div>
           {/* Mobile navigation links */}
           <div className="flex flex-col pt-12 gap-y-8 justify-center items-center text-[1.1rem] font-Montserrat font-bold sm:hidden">
@@ -157,7 +157,7 @@ export default function Header() {
             >
               Contact
             </Link>
-            <NavLink
+            {/* <NavLink
                target="_blank"
                to="https://drive.google.com/file/d/18LniJIjIE57xRdbfebx-qaGg2Eo6NeTp/view?usp=sharing"
               className="block text-black hover:text-gray cursor-pointer"
@@ -166,7 +166,7 @@ export default function Header() {
               <button className=" border-solid border-black px-2 md:px-4 py-1 md:py-2 font-bold border-[3px] hover:text-gray hover:border-gray  ">
                 MY RESUME
               </button>
-            </NavLink>
+            </NavLink> */}
           </div>
         </nav>
       </div>
