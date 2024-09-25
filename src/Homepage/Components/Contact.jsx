@@ -1,94 +1,94 @@
 /* eslint-disable react/no-unescaped-entities */
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import Heading from "../../Components/Heading";
 import Seperator from "../../Components/Seperator";
-import emailjs from "@emailjs/browser";
+// import emailjs from "@emailjs/browser";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 export default function Contact() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    number: "",
-    message: "",
-  });
+  // const [formData, setFormData] = useState({
+  //   name: "",
+  //   email: "",
+  //   number: "",
+  //   message: "",
+  // });
 
-  const resetForm = () => {
-    setFormData({
-      name: "",
-      email: "",
-      number: "",
-      message: "",
-    });
-    setErrors({});
-  };
+  // const resetForm = () => {
+  //   setFormData({
+  //     name: "",
+  //     email: "",
+  //     number: "",
+  //     message: "",
+  //   });
+  //   setErrors({});
+  // };
 
-  const [errors, setErrors] = useState({});
-  const [isLoading, setIsLoading] = useState(false);
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  // const [errors, setErrors] = useState({});
+  // const [isLoading, setIsLoading] = useState(false);
+  // const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
+  // const handleChange = (e) => {
+  //   const { name, value } = e.target;
+  //   setFormData({
+  //     ...formData,
+  //     [name]: value,
+  //   });
 
-    setIsModalOpen(false);
-  };
+  //   setIsModalOpen(false);
+  // };
 
-  const validateForm = () => {
-    const newErrors = {};
-    if (!formData.name.trim()) {
-      newErrors.name = "Please input Your Name";
-    } else if (formData.name.length < 3) {
-      newErrors.name = "Name must have at least 3 characters";
-    }
+  // const validateForm = () => {
+  //   const newErrors = {};
+  //   if (!formData.name.trim()) {
+  //     newErrors.name = "Please input Your Name";
+  //   } else if (formData.name.length < 3) {
+  //     newErrors.name = "Name must have at least 3 characters";
+  //   }
 
-    if (!formData.email.trim()) {
-      newErrors.email = "Please input Your Email";
-    } else if (!/^\S+@\S+\.\S+$/.test(formData.email)) {
-      newErrors.email = "Please input a valid email";
-    }
+  //   if (!formData.email.trim()) {
+  //     newErrors.email = "Please input Your Email";
+  //   } else if (!/^\S+@\S+\.\S+$/.test(formData.email)) {
+  //     newErrors.email = "Please input a valid email";
+  //   }
 
-    if (!formData.message.trim()) {
-      newErrors.message = "Please input Your Message";
-    }
+  //   if (!formData.message.trim()) {
+  //     newErrors.message = "Please input Your Message";
+  //   }
 
-    return newErrors;
-  };
+  //   return newErrors;
+  // };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // setIsModalOpen(true);
-    const newErrors = validateForm();
-    if (Object.keys(newErrors).length === 0) {
-      // No errors, proceed with form submission
-      setIsLoading(true);
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   // setIsModalOpen(true);
+  //   const newErrors = validateForm();
+  //   if (Object.keys(newErrors).length === 0) {
+  //     // No errors, proceed with form submission
+  //     setIsLoading(true);
 
-      emailjs
-        .sendForm(
-          "service_prpkq5j",
-          "template_0wd8eaa",
-          e.target,
-          "zfjNcVHR7ZKlJ9cLQ"
-        )
-        .then((result) => {
-          console.log(result.text);
-          setIsLoading(false);
-          setIsModalOpen(true);
-          resetForm();
-        })
-        .catch((error) => {
-          console.log(error.text);
-          setIsLoading(false);
-        });
-    } else {
-      // There are errors, update the state with the error messages
-      setErrors(newErrors);
-    }
-  };
+  //     emailjs
+  //       .sendForm(
+  //         "service_prpkq5j",
+  //         "template_0wd8eaa",
+  //         e.target,
+  //         "zfjNcVHR7ZKlJ9cLQ"
+  //       )
+  //       .then((result) => {
+  //         console.log(result.text);
+  //         setIsLoading(false);
+  //         setIsModalOpen(true);
+  //         resetForm();
+  //       })
+  //       .catch((error) => {
+  //         console.log(error.text);
+  //         setIsLoading(false);
+  //       });
+  //   } else {
+  //     // There are errors, update the state with the error messages
+  //     setErrors(newErrors);
+  //   }
+  // };
 
   useEffect(() => {
     AOS.init({
@@ -124,9 +124,21 @@ export default function Contact() {
         <div className="pt-8 lg:pt-10 xl:pt-12  ">
           <Seperator />
         </div>
+
+        <div className="py-8 font-OpenSans w-[80%] sm:w-[70%] md:w-[60%] lg:w-[50%] mx-auto text-[0.85rem] ssm:text-[0.9rem] sm:text-base lg:py-10 xl:py-12 text-center  ">
+          <p>
+            Send a message to{" "}
+            <a
+              className=" hover:text-[blue]"
+              href="mailto:mmadujonathan@gmail.com"
+            >
+              mmadujonathan@gmail.com
+            </a> today!
+          </p>
+        </div>
       </section>
 
-      <form
+      {/* <form
         onSubmit={handleSubmit}
         id="contact-form"
         action=""
@@ -156,7 +168,6 @@ export default function Contact() {
         />
         <small className="text-[red]">{errors.email && errors.email}</small>
 
-        {/* Add similar input fields for other form fields here */}
         <input
           className="w-full mt-8 xl:mt-10 text-[0.8rem] sm:text-[0.85rem] lg:text-[0.9rem]  placeholder:text-[0.8rem] placeholder:sm:text-[0.85rem] placeholder:lg:text-[0.9rem] focus:border-gray placeholder:text-gray px-[4%] ssm:px-[2%] py-2 bg-[transparent] border-solid border-b-[4px] border-l-[4px] border-Secondary outline-none "
           type="number"
@@ -190,9 +201,7 @@ export default function Contact() {
                 viewBox="0 0 100 101"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-              >
-                {/* Add loading animation SVG here */}
-              </svg>
+              ></svg>
               SENDING...
             </button>
           ) : (
@@ -209,7 +218,7 @@ export default function Contact() {
             Thank you for submitting!
           </div>
         )}
-        {/* {isModalOpen && (
+        {isModalOpen && (
           <div
             className={`fixed top-0 left-0 right-0 bottom-0 bg-[#00000054]  flex items-center justify-center
     transition-opacity duration-300 ease-in-out ${
@@ -237,8 +246,8 @@ transition-transform duration-300 ease-in-out ${
               </div>
             </div>
           </div>
-        )} */}
-      </form>
+        )}
+      </form> */}
     </div>
   );
 }
