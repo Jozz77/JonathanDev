@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { useEffect, useState } from "react";
 import Heading from "../../Components/Heading";
 import Seperator from "../../Components/Seperator";

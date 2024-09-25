@@ -11,8 +11,9 @@ import Klyn1 from "./Assets/Klyn1.webp";
 import Klyn2 from "./Assets/Klyn2.png";
 import Dodov1 from "./Assets/Dodov1.png";
 import Dodov2 from "./Assets/Dodov2.png";
-import Skriper1 from "./Assets/Skriper1.webp";
-import Skriper2 from "./Assets/Skriper2.png";
+import chowdeck from "./Assets/chowdeck.png"
+// import Skriper1 from "./Assets/Skriper1.webp";
+// import Skriper2 from "./Assets/Skriper2.png";
 
 
 const PortfolioData = [
@@ -23,6 +24,14 @@ const PortfolioData = [
         isPersonalProject: true,
         description: 'An e-commerce site where users can purchase different items including household items. Created using Typescript, React, Tailwind, Redux, Usequery etc. ',
         link: 'https://dilussostore.shop/'
+    },
+    {
+        img: chowdeck,
+        img2: chowdeck,
+        title: 'ChowDeck Replica',
+        isPersonalProject: true,
+        description: 'A Replica of ChowDeck landing page created using Vue, Tailwind, Gsap.',
+        link: 'https://chowdeck-replica.vercel.app/'
     },
     {
         img: Klyn1,
@@ -56,14 +65,14 @@ const PortfolioData = [
         description: 'This is a replication of a website by Hristiyan Dodov. Created with HTML, CSS and JavaScript.',
         link: 'https://rasheedatj.github.io/Team-2-dodov/'
     },
-    {
-        img: Skriper1,
-        img2: Skriper2,
-        title: 'Skriper Website',
-        isPersonalProject: false,
-        description: 'This is a replication of the Skriper Website. Created with HTML, CSS and JavaScript.',
-        link: 'https://jozz77.github.io/Skriper-Project/'
-    },
+    // {
+    //     img: Skriper1,
+    //     img2: Skriper2,
+    //     title: 'Skriper Website',
+    //     isPersonalProject: false,
+    //     description: 'This is a replication of the Skriper Website. Created with HTML, CSS and JavaScript.',
+    //     link: 'https://jozz77.github.io/Skriper-Project/'
+    // },
     // {
     //     img: WordPress1,
     //     img2: WordPress2,

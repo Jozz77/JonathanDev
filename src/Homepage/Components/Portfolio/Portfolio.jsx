@@ -87,7 +87,7 @@ export default function Portfolio() {
       </section>
       <section className="  p-2">
         {activeTab === "tab1" && (
-          <div className="flex justify-between gap-y-3 sm:gap-y-2 flex-wrap">
+          <div className="flex gap-[0.7%] gap-y-3 sm:gap-y-2 flex-wrap">
             {PortfolioData.map((portfolio, index) => {
               const isHovered = index === hoveredIndex;
               return (
@@ -134,7 +134,7 @@ export default function Portfolio() {
         )}
 
         {activeTab === "tab2" && (
-          <div className="flex justify-between gap-y-3 sm:gap-y-2 flex-wrap">
+          <div className="flex gap-[0.7%] gap-y-3 sm:gap-y-2 flex-wrap">
             {PortfolioData.filter(
               (portfolio) => portfolio.isPersonalProject
             ).map((portfolio, index) => {
@@ -181,7 +181,7 @@ export default function Portfolio() {
         )}
 
         {activeTab === "tab3" && (
-          <div className="flex justify-start gap-y-3 sm:gap-y-2 flex-wrap">
+          <div className="flex gap-[0.7%] gap-y-3 sm:gap-y-2 flex-wrap">
             {PortfolioData.filter(
               (portfolio) => !portfolio.isPersonalProject
             ).map((portfolio, index) => {
