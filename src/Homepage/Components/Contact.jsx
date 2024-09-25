@@ -129,7 +129,7 @@ export default function Contact() {
           <p>
             Send a message to{" "}
             <a
-              className=" hover:text-[blue]"
+              className=" hover:text-gray"
               href="mailto:mmadujonathan@gmail.com"
             >
               mmadujonathan@gmail.com
