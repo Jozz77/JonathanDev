@@ -92,32 +92,30 @@ export default function Portfolio() {
               const isHovered = index === hoveredIndex;
               return (
                 <section
-                  key={index}
+                  key={portfolio.id}
                   onMouseEnter={() => handleMouseEnter(index)}
                   onMouseLeave={handleMouseLeave}
                   className="relative w-1/1 sm:w-[49.5%] lg:w-[32.85%] group"
                 >
-                  <div>
-                  <img src={portfolio.img} className="w-full h-[15rem] sm:h-auto object-contain " alt="" />
-                  </div>
+                  <img src={portfolio.img} className="w-full" alt="" />
                   <div
-                    className={`absolute flex justify-center font-Montserrat  bg-Secondary bg-opacity-10 bottom-0 right-0 top-0 left-0 bg-white p-4 w-full shadow-md transition-opacity duration-1000 ${
+                    className={`absolute flex justify-center font-Montserrat bg-Secondary bg-opacity-10 bottom-0 right-0 top-0 left-0 bg-white p-4 w-full shadow-md transition-opacity duration-1000 ${
                       !isHovered ? "opacity-100" : "opacity-0"
                     }`}
                   >
-                    <h1 className="text-[1.2rem] ssm:text-[1.6rem] sm:text-[1.1rem] md:text-[1.6rem] lg:text-[1.4rem] xl:text-[1.6rem] bg-otherBlack opacity-80 px-2 sm:px-4 bottom-[5%] absolute font-bold tracking-[5px] mt-1">
+                    <h1 className="text-[1.2rem] ssm:text-[1.6rem] sm:text-[1.1rem] lg:text-[1.4rem] xl:text-[1.6rem] absolute bg-otherBlack opacity-80 px-2 sm:px-4 bottom-[5%] font-bold tracking-[5px] mt-1">
                       {portfolio.title}
                     </h1>
                   </div>
                   <div
                     className={`absolute flex flex-col items-center font-Montserrat justify-center bg-Secondary bg-opacity-80 bottom-0 right-0 top-0 left-0 bg-white p-4 w-full shadow-md transition-opacity duration-1000 ${
-                      isHovered ? "opacity-100 " : "opacity-0"
+                      isHovered ? "opacity-100" : "opacity-0"
                     }`}
                   >
                     <p className="text-[0.8rem] ssm:text-[0.8rem] sm:text-[0.7rem] font-semibold">
                       coded
                     </p>
-                    <h1 className="text-[1.2rem] ssm:text-[1.6rem] sm:text-[1.1rem] md:text-[1.6rem]  lg:text-[1.4rem] xl:text-[1.6rem] font-bold tracking-[5px] mt-1">
+                    <h1 className="text-[1.2rem] ssm:text-[1.6rem] sm:text-[1.1rem] lg:text-[1.4rem] xl:text-[1.6rem] font-bold tracking-[5px] mt-1">
                       {portfolio.title}
                     </h1>
                     <p className="text-[0.8rem] ssm:text-[0.8rem] sm:text-[0.7rem] sm:px-[10%] px-[5%] lg:px-[15%] text-center font-medium mt-2 lg:mt-4">
