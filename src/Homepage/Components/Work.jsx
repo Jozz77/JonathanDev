@@ -30,8 +30,7 @@ export default function Work() {
           TECHNICAL SKILLS
         </h1>
         <p className=" font-Montserrat pt-1 sm:pt-1 text-[0.8rem] ssm:text-[0.85rem] sm:text-[0.75rem] md:text-[0.85rem]  lg:text1.1rem] xl:text-[0.95rem]">
-          I'm good with HTML, CSS, JavaScript, TypeScript, React, Next JS, Vue, Tailwind, SCSS, Redux, Git and
-          Github etc.
+          I am a Software Developer building full-stack applications with Node.js (Express), TypeScript, and React/Next.js, leveraging Tailwind CSS for rapid, responsive UI development and Redux for robust state management.
         </p>
       </section>
 
@@ -44,9 +43,7 @@ export default function Work() {
           SOFT SKILLS
         </h1>
         <p className=" font-Montserrat pt-1 sm:pt-1 text-[0.8rem] ssm:text-[0.85rem] sm:text-[0.75rem] md:text-[0.85rem]  lg:text-[0.9rem] xl:text-[0.95rem]">
-          Effective Communication, Creative Problem Solving, Strong Team
-          Collaboration, Responsive Web Design Expertise, Adaptability in
-          Diverse Environments, Creative Thinking, and Empathetic Approach
+          Combines analytical problem-solving and adaptability with a collaborative, empathetic approach to deliver high-quality, user-centric software solutions within diverse team environments
         </p>
       </section>
       {/* <section className="mt-4 sm:mt-0 w-full sm:w-[47.5%]  md:w-[45%] ">

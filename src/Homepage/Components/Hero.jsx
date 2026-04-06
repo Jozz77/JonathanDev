@@ -21,7 +21,7 @@ export default function Hero() {
           <h1>Jonathan Mmadu</h1>
         </div>
         <small className="  text-gray text-[0.8rem] ssm:text-[0.9rem] sm:text-[0.8rem] md:text-[0.9rem] lg:text-[1rem] xl:text-[1.1rem] font-extrabold ">
-          A Frontend Developer
+          A Software Developer
         </small>
         <Link
           to="portfolio"
