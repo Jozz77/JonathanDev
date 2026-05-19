@@ -17,14 +17,14 @@ import chowdeck from "./Assets/chowdeck.png"
 
 
 const PortfolioData = [
-        {
-        img: Dilusso3,
-        img2: Dilusso2,
-        title: 'Dilusso',
-        isPersonalProject: true,
-        description: 'An e-commerce site where users can purchase different items including household items. Created using Typescript, React, Tailwind, Redux, Usequery etc. ',
-        link: 'https://dilussostore.shop/'
-    },
+    //     {
+    //     img: Dilusso3,
+    //     img2: Dilusso2,
+    //     title: 'Dilusso',
+    //     isPersonalProject: true,
+    //     description: 'An e-commerce site where users can purchase different items including household items. Created using Typescript, React, Tailwind, Redux, Usequery etc. ',
+    //     link: 'https://dilussostore.shop/'
+    // },
     {
         img: chowdeck,
         img2: chowdeck,

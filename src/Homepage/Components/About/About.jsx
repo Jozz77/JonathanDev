@@ -36,7 +36,16 @@ export default function About() {
         <Heading text="ABOUT ME" />
       </div>
       <p className=" font-OpenSans text-justify sm:text-center pt-4 md:pt-6 lg:pt-8 font-medium text-[0.85rem] ssm:text-[0.9rem] lg:text-[0.95rem] xl:text-base w-[80%] ssm:w-[70%] md:w-[60%] mx-auto ">
-        I’m Jonathan Mmadu, a Software Developer driven by the challenge of building functional, high-impact applications. With over two years of experience evolving from frontend foundations to full-stack logic, I've found my rhythm in crafting software that truly works for people. Beyond the terminal, I’m an avid reader who finds just as much satisfaction in a complex mystery novel or an adventure tale as I do in solving a difficult bug. I’m a clear, collaborative communicator who believes that the best code is built with empathy and a curious mind.
+        I’m Jonathan Mmadu, a Fullstack Developer based in Lagos, Nigeria,
+        driven by the challenge of building high-performance, secure
+        applications. With over 3 years of professional experience evolving from
+        frontend foundations to complex full-stack logic, I focus on crafting
+        software that runs lean and respects the end-user. Beyond the terminal,
+        I’m an avid reader who finds just as much satisfaction untangling a
+        complex mystery or adventure novel as I do tracking down a stubborn bug.
+        I bring absolute technical ownership to my work, believing that the best
+        code is built with a security-first mindset, clear documentation, and a
+        completely straightforward, human approach to collaboration.
       </p>
       <div className="flex justify-center pt-6 md:pt-8 lg:pt-10 xl:pt-12 ">
         <p className=" border-solid border-black px-6 sm:px-8 py-1 text-[0.85rem] ssm:text-[0.9rem]  lg:text-[0.95rem] xl:text-base font-bold   border-r-[3px] border-l-[3px]   ">
@@ -47,13 +56,20 @@ export default function About() {
         <Seperator />
       </div>
 
-      <section className="flex flex-col sm:flex-row items-center sm:items-start sm:justify-between px-[0%] ssm:px-[5%] md:px-[10%] lg:px-[15%] pt-8 sm:pt-10 xl:pt-12  ">
+      <section className="flex flex-col sm:flex-row items-center sm:items-start sm:justify-between px-[0%] ssm:px-[5%] md:px-[7%] lg:px-[7%] pt-8 sm:pt-10 xl:pt-12  ">
         <div className="w-[80%] ssm:w-[70%] sm:w-[47%] xl:w-[45%] relative ">
           <h1 className=" font-Montserrat text-[1rem] ssm:text-[1.1rem] lg:text-[1.2rem] xl:text-[1.3rem] font-bold tracking-[4px] ">
             DEVELOPMENT
           </h1>
           <p className=" pt-2 font-OpenSans text-justify sm:text-left text-[0.85rem] md:text-[0.85rem] lg:text-[0.9rem] font-base ">
-           Whether building from scratch or scaling an existing codebase, I engineer fully functional, responsive applications that prioritize performance and user experience.
+            I build fast, secure, and highly scalable digital products from the
+            ground up. My engineering focus centers on pairing modern frontend
+            frameworks like React and Next.js with robust Node.js or Python
+            backends, alongside edge-native architectures using Cloudflare
+            Workers and HTMX. I don't just build to fulfill a checklist; I
+            engineer for extreme optimization, routinely hitting 90+ Lighthouse
+            scores so applications load instantly on any device or network
+            constraint.
           </p>
           <div className=" w-[10%] lg:w-[12%]  absolute top-0 left-[-10%] ">
             <img className=" w-full" src={Dev} alt="" />
@@ -65,7 +81,14 @@ export default function About() {
             MAINTENANCE
           </h1>
           <p className="pt-2 font-OpenSans text-justify sm:text-left text-[0.85rem] md:text-[0.85rem] font-base ">
-            When challenges arise or new requirements emerge, I’m ready to jump in—implementing efficient features and creative fixes to keep the project moving forward.
+            Software isn't static; it constantly evolves. I approach refactoring
+            and system maintenance with deep technical rigor—auditing API
+            endpoints, optimizing database structures, and systematically
+            eliminating code bloat. Drawing from my experience as a Core
+            Contributor to global open-source ecosystems like the OWASP
+            Foundation, I am entirely at home navigating large, complex codebases
+            to patch security vulnerabilities, implement resilient new features,
+            and keep production systems running reliably.
           </p>
           <div className=" w-[10%] lg:w-[12%]  absolute top-0 left-[-10%] ">
             <img className=" w-full" src={Maint} alt="" />

@@ -30,7 +30,7 @@ export default function Work() {
           TECHNICAL SKILLS
         </h1>
         <p className=" font-Montserrat pt-1 sm:pt-1 text-[0.8rem] ssm:text-[0.85rem] sm:text-[0.75rem] md:text-[0.85rem]  lg:text1.1rem] xl:text-[0.95rem]">
-          I am a Software Developer building full-stack applications with Node.js (Express), TypeScript, and React/Next.js, leveraging Tailwind CSS for rapid, responsive UI development and Redux for robust state management.
+         Full-stack engineer specializing in React, Next.js, TypeScript, and Node.js/Python (Django). Obsessed with extreme web performance and mobile optimization—consistently engineering lean, no-bloat code to achieve 90+ Lighthouse scores. Experienced in deploying distributed edge logic (Cloudflare Workers, HTMX) and designing highly secure, resilient API architectures shaped by global open-source security frameworks.
         </p>
       </section>
 
@@ -43,7 +43,7 @@ export default function Work() {
           SOFT SKILLS
         </h1>
         <p className=" font-Montserrat pt-1 sm:pt-1 text-[0.8rem] ssm:text-[0.85rem] sm:text-[0.75rem] md:text-[0.85rem]  lg:text-[0.9rem] xl:text-[0.95rem]">
-          Combines analytical problem-solving and adaptability with a collaborative, empathetic approach to deliver high-quality, user-centric software solutions within diverse team environments
+          Brings absolute technical ownership, remote autonomy, and a proactive mindset to fast-paced engineering teams. Grounded in a patient, transparent, and ego-free approach to peer reviews and architectural dialogue—honed through core contributions to global open-source ecosystems like <b >OWASP</b>. Prioritizes clear communication and meticulous documentation to keep distributed cross-functional teams perfectly aligned.
         </p>
       </section>
       {/* <section className="mt-4 sm:mt-0 w-full sm:w-[47.5%]  md:w-[45%] ">
