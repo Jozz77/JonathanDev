@@ -12,25 +12,28 @@ import Klyn2 from "./Assets/Klyn2.png";
 import Dodov1 from "./Assets/Dodov1.png";
 import Dodov2 from "./Assets/Dodov2.png";
 import chowdeck from "./Assets/chowdeck.png"
+import quilox1 from "./Assets/Quilox1.jpg";
+import quilox2 from "./Assets/Quilox2.jpg";
+
 // import Skriper1 from "./Assets/Skriper1.webp";
 // import Skriper2 from "./Assets/Skriper2.png";
 
 
 const PortfolioData = [
-    //     {
-    //     img: Dilusso3,
-    //     img2: Dilusso2,
-    //     title: 'Dilusso',
-    //     isPersonalProject: true,
-    //     description: 'An e-commerce site where users can purchase different items including household items. Created using Typescript, React, Tailwind, Redux, Usequery etc. ',
-    //     link: 'https://dilussostore.shop/'
-    // },
+        {
+        img: quilox1,
+        img2: quilox2,
+        title: 'Quilox',
+        isPersonalProject: false,
+        description: 'A Night Club website created using Typescript, React, Tailwind, and Node js  etc. ',
+        link: 'https://clubquilox.com/'
+    },
     {
         img: chowdeck,
         img2: chowdeck,
         title: 'ChowDeck Replica',
         isPersonalProject: true,
-        description: 'A Replica of ChowDeck landing page created using Vue, Tailwind, Gsap.',
+        description: 'A Replica of ChowDeck landing page created using Vue, Tailwind, Gsap recreated by me for fun.',
         link: 'https://chowdeck-replica.vercel.app/'
     },
     {

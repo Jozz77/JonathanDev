@@ -51,7 +51,7 @@ export default function Portfolio() {
       <section className="  py-4 ssm:py-6 lg:py-8 text-Secondary ">
         <Heading text="PROJECTS" />
       </section>
-      <section className="w-full bg-otherBlack text-WhiteBoldText">
+      <section className="w-full hidden bg-otherBlack text-WhiteBoldText">
         <div className="flex flex-wrap justify-center py-2 sm:py-4 mb-0 sm:mb-4 ">
           <div
             onClick={() => handleTabClick("tab1")}
@@ -95,9 +95,9 @@ export default function Portfolio() {
                   key={portfolio.id}
                   onMouseEnter={() => handleMouseEnter(index)}
                   onMouseLeave={handleMouseLeave}
-                  className="relative w-1/1 sm:w-[49.5%] lg:w-[32.85%] group"
+                  className="relative w-full sm:w-[49.5%] lg:w-[32.85%] group"
                 >
-                  <img src={portfolio.img} className="w-full" alt="" />
+                  <img src={portfolio.img} className="w-full h-[15rem] object-fill object-top" alt="" />
                   <div
                     className={`absolute flex justify-center font-Montserrat bg-Secondary bg-opacity-10 bottom-0 right-0 top-0 left-0 bg-white p-4 w-full shadow-md transition-opacity duration-1000 ${
                       !isHovered ? "opacity-100" : "opacity-0"

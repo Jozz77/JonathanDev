@@ -14,7 +14,7 @@ export default function Header() {
   };
 
   return (
-    <header className="bg-Primary overflow-hidden z-10 fixed top-0 w-full py-2 sm:py-3 xl:py-4">
+    <header className="bg-Primary overflow-hidden z-10 fixed top-0 w-full py-2 sm:py-10 xl:py-10">
       <div className="sm:flex sm:justify-between md:items-center px-[5%] md:px-[7%] lg:px-[10%]">
         <div className="flex items-center justify-between">
           <div className=" text-[1.4rem] cursor-pointer sm:text-[1.3rem] md:text-[1.5rem] lg:text-[1.7rem] xl:text-[2rem] font-Montserrat font-bold ">
