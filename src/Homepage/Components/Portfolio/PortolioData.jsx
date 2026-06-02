@@ -14,6 +14,8 @@ import Dodov2 from "./Assets/Dodov2.png";
 import chowdeck from "./Assets/chowdeck.png"
 import quilox1 from "./Assets/Quilox1.jpg";
 import quilox2 from "./Assets/Quilox2.jpg";
+import layers1 from "./Assets/layers1.png";
+import layers2 from "./Assets/layers2.png";
 
 // import Skriper1 from "./Assets/Skriper1.webp";
 // import Skriper2 from "./Assets/Skriper2.png";
@@ -21,6 +23,14 @@ import quilox2 from "./Assets/Quilox2.jpg";
 
 const PortfolioData = [
         {
+        img: layers2,
+        img2: layers1,
+        title: 'Layers - ASO Audit',
+        isPersonalProject: false,
+        description: 'Layers - ASO Audit Agent is an AI-driven "digital consultant" that automates 10-point App Store Optimization health checks to help mobile developers optimize their iOS app rankings and increase downloads. ',
+        link: 'https://layers-ecru.vercel.app/'
+    },
+    {
         img: quilox1,
         img2: quilox2,
         title: 'Quilox',
@@ -44,14 +54,14 @@ const PortfolioData = [
         description: 'A Dental Clinic website created using React, Tailwind, React Image Gallery. Connected to API endpoints to enable booking an appointment on the site.',
         link: 'https://klyn-dentals.vercel.app/'
     },
-    {
-        img: Res1,
-        img2: Res2,
-        title: 'Foodgram',
-        isPersonalProject: true,
-        description: 'A one-paged Restuarant site created using React JS, Tailwind and Swiper JS.',
-        link: 'https://restaurant-gxr3.vercel.app/'
-    },
+    // {
+    //     img: Res1,
+    //     img2: Res2,
+    //     title: 'Foodgram',
+    //     isPersonalProject: true,
+    //     description: 'A one-paged Restuarant site created using React JS, Tailwind and Swiper JS.',
+    //     link: 'https://restaurant-gxr3.vercel.app/'
+    // },
     {
         img: Bake1,
         img2: Bake2,
