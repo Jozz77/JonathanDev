@@ -113,12 +113,12 @@ export default function Portfolio() {
                     }`}
                   >
                     <p className="text-[0.8rem] ssm:text-[0.8rem] sm:text-[0.7rem] font-semibold">
-                      coded
+                      {portfolio.isCoded}
                     </p>
                     <h1 className="text-[1.2rem] ssm:text-[1.6rem] sm:text-[1.1rem] lg:text-[1.4rem] xl:text-[1.6rem] font-bold tracking-[5px] mt-1">
                       {portfolio.title}
                     </h1>
-                    <p className="text-[0.8rem] ssm:text-[0.8rem] sm:text-[0.7rem] sm:px-[10%] px-[5%] lg:px-[15%] text-center font-medium mt-2 lg:mt-4">
+                    <p className="text-[0.8rem] ssm:text-[0.8rem] sm:text-[0.7rem] sm:px-[10%] px-[5%] lg:px-[10%] text-center font-medium mt-2 lg:mt-4">
                       {portfolio.description}
                     </p>
                     <Link to={portfolio.link} target="_blank" className="">

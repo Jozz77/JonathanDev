@@ -30,7 +30,7 @@ export default function Work() {
           TECHNICAL SKILLS
         </h1>
         <p className=" font-Montserrat pt-1 sm:pt-1 text-[0.8rem] ssm:text-[0.85rem] sm:text-[0.75rem] md:text-[0.85rem]  lg:text1.1rem] xl:text-[0.95rem]">
-         Full-stack engineer specializing in React, Next.js, TypeScript, and Node.js/Python (Django). Obsessed with extreme web performance and mobile optimization—consistently engineering lean, no-bloat code to achieve 90+ Lighthouse scores. Experienced in deploying distributed edge logic (Cloudflare Workers, HTMX) and designing highly secure, resilient API architectures shaped by global open-source security frameworks.
+        Software engineer and QA tester specializing in React, Next.js, TypeScript, and Node.js. Obsessed with software reliability, end-to-end testing, extreme web performance, and mobile optimization. Experienced in executing exploratory and regression testing, identifying subtle UI/UX edge cases, validating REST APIs, and building resilient web architectures.
         </p>
       </section>
 
