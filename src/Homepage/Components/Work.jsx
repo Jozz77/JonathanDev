@@ -43,7 +43,7 @@ export default function Work() {
           SOFT SKILLS
         </h1>
         <p className=" font-Montserrat pt-1 sm:pt-1 text-[0.8rem] ssm:text-[0.85rem] sm:text-[0.75rem] md:text-[0.85rem]  lg:text-[0.9rem] xl:text-[0.95rem]">
-          Brings absolute technical ownership, remote autonomy, and a proactive mindset to fast-paced engineering teams. Grounded in a patient, transparent, and ego-free approach to peer reviews and architectural dialogue—honed through core contributions to global open-source ecosystems like <b >OWASP</b>. Prioritizes clear communication and meticulous documentation to keep distributed cross-functional teams perfectly aligned.
+          I take full ownership of my work and thrive in autonomous, remote teams. Whether I’m designing AI workflows, refactoring full-stack code, or collaborating on open-source projects like OWASP, I prioritize clear communication, patient peer reviews, and thorough documentation. I bring a practical, problem-solving mindset to every project—ensuring cross-functional teams stay aligned and the AI and software solutions I build actually solve real business problems.
         </p>
       </section>
       {/* <section className="mt-4 sm:mt-0 w-full sm:w-[47.5%]  md:w-[45%] ">
