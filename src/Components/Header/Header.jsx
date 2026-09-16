@@ -87,7 +87,7 @@ export default function Header() {
             >
               Projects
             </Link>
-            <Link
+            {/* <Link
               to="blog"
               smooth={true}
               duration={500}
@@ -95,7 +95,7 @@ export default function Header() {
               className="block text-black hover:text-gray cursor-pointer"
             >
               Blog
-            </Link>
+            </Link> */}
             <Link
               to="contact"
               smooth={true}
@@ -137,7 +137,7 @@ export default function Header() {
             >
               Projects
             </Link>
-            <Link
+            {/* <Link
               to="blog"
               smooth={true}
               duration={500}
@@ -146,7 +146,7 @@ export default function Header() {
               onClick={handleMobileSectionClick}
             >
               Blog
-            </Link>
+            </Link> */}
             <Link
               to="contact"
               smooth={true}

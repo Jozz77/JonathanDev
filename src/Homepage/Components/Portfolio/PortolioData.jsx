@@ -35,10 +35,10 @@ const PortfolioData = [
   {
         img: layers2,
         img2: layers1,
-        title: 'Layers - ASO Audit',
+        title: 'Layers - AI Agent & ASO Audit',
         isPersonalProject: false,
         isCoded: " coded ",
-        description: 'Layers - ASO Audit Agent is an AI-driven "digital consultant" that automates 10-point App Store Optimization health checks to help mobile developers optimize their iOS app rankings and increase downloads. ',
+        description: 'Layers - AI Agent & ASO Audit is an AI-driven "digital consultant" that automates 10-point App Store Optimization health checks to help mobile developers optimize their iOS app rankings and increase downloads. ',
         link: 'https://layers-ecru.vercel.app/'
     },
 

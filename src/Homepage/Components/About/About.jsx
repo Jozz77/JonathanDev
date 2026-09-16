@@ -6,6 +6,7 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Dev from "./Assets/Dev.png";
 import Maint from "./Assets/Maint.png";
+import { MdOutlinePlaylistAddCheck } from "react-icons/md";
 
 export default function About() {
   useEffect(() => {
@@ -36,9 +37,7 @@ export default function About() {
         <Heading text="ABOUT ME" />
       </div>
       <p className=" font-OpenSans text-justify sm:text-center pt-4 md:pt-6 lg:pt-8 font-medium text-[0.85rem] ssm:text-[0.9rem] lg:text-[0.95rem] xl:text-base w-[80%] ssm:w-[70%] md:w-[60%] mx-auto ">
-       I'm Jonathan Mmadu, a Software Developer and QA Tester based in Lagos, Nigeria, driven by the challenge of building high-performance, resilient, and thoroughly tested applications. With over 3 years of experience evolving from frontend foundations to full-stack logic and quality assurance, I focus on crafting software that runs lean, stays secure, and delivers flawless user experiences.
-
-Beyond the terminal, I'm an avid reader who finds just as much satisfaction untangling a complex mystery novel as I do tracking down a stubborn bug, stress-testing edge cases, or writing rigorous test flows. I bring absolute technical ownership to my work, believing that the best code combines clean architecture with unshakeable quality assurance.
+      I’m Jonathan Mmadu—a Full-Stack, QA, and AI Solutions Engineer based in Lagos, Nigeria. Over the past 3+ years, I’ve built full-stack web applications, automated testing suites, and AI agent workflows that simplify complex business processes. Outside of code, I’m an avid reader who gets just as much joy out of untangling a mystery novel as I do tracking down a stubborn bug or building an AI workflow. My goal is simple: ship clean, reliable software that actually solves real-world problems.
       </p>
       <div className="flex justify-center pt-6 md:pt-8 lg:pt-10 xl:pt-12 ">
         <p className=" border-solid border-black px-6 sm:px-8 py-1 text-[0.85rem] ssm:text-[0.9rem]  lg:text-[0.95rem] xl:text-base font-bold   border-r-[3px] border-l-[3px]   ">
@@ -49,29 +48,37 @@ Beyond the terminal, I'm an avid reader who finds just as much satisfaction unta
         <Seperator />
       </div>
 
-      <section className="flex flex-col sm:flex-row items-center sm:items-start sm:justify-between px-[0%] ssm:px-[5%] md:px-[7%] lg:px-[7%] pt-8 sm:pt-10 xl:pt-12  ">
+      <section className="flex flex-col sm:flex-row flex-wrap items-center sm:items-start sm:justify-between px-[0%] ssm:px-[5%] md:px-[7%] lg:px-[7%] pt-8 sm:pt-10 xl:pt-12  ">
         <div className="w-[80%] ssm:w-[70%] sm:w-[47%] xl:w-[45%] relative ">
-          <h1 className=" font-Montserrat text-[1rem] ssm:text-[1.1rem] lg:text-[1.2rem] xl:text-[1.3rem] font-bold tracking-[4px] ">
-            DEVELOPMENT & QUALITY ASSURANCE
+          <h1 className=" font-Montserrat uppercase text-[1rem] ssm:text-[1.1rem] lg:text-[1.2rem] xl:text-[1.3rem] font-bold tracking-[4px] ">
+            Full-Stack & AI Engineering
           </h1>
           <p className=" pt-2 font-OpenSans text-justify sm:text-left text-[0.85rem] md:text-[0.85rem] lg:text-[0.9rem] font-base ">
-            I build fast, secure, and highly scalable digital products from the ground up. My engineering focus centers on pairing modern frontend frameworks like React and Next.js with robust backend services, ensuring extreme performance and high Lighthouse scores. Also, code is only as good as its reliability. I conduct rigorous exploratory and regression testing across complex web applications, e-commerce platforms, and admin dashboards. From validating authentication flows and API integrations to cross-device responsiveness and session persistence, I ensure edge cases are caught before hit production.
+           Building scalable web applications end-to-end—from Figma-to-code frontend interfaces to Node/Express backend APIs. Experienced in integrating LLM workflows, structured outputs, agentic orchestration, and custom business automation tools.
           </p>
           <div className=" w-[10%] lg:w-[12%]  absolute top-0 left-[-10%] ">
             <img className=" w-full" src={Dev} alt="" />
           </div>
         </div>
 
-        <div className=" w-[80%] ssm:w-[70%] sm:w-[47%] xl:w-[45%] relative ">
-          <h1 className=" mt-4 sm:mt-0 font-Montserrat text-[1rem] ssm:text-[1.1rem] lg:text-[1.2rem] xl:text-[1.3rem] font-bold tracking-[4px] ">
-            MAINTENANCE
+         <div className="w-[80%] ssm:w-[70%] sm:w-[47%] xl:w-[45%] relative ">
+          <h1 className=" font-Montserrat uppercase text-[1rem] ssm:text-[1.1rem] lg:text-[1.2rem] xl:text-[1.3rem] font-bold tracking-[2px] ">
+            Quality Assurance & Automation
+          </h1>
+          <p className=" pt-2 font-OpenSans text-justify sm:text-left text-[0.85rem] md:text-[0.85rem] lg:text-[0.9rem] font-base ">
+Ensuring software launches bug-free through rigorous Playwright test automation, exploratory QA, API validation, and edge-case stress testing to keep client platforms crash-free.
+          </p>
+          <div className=" w-[10%] lg:w-[12%]  absolute top-0 left-[-10%] flex items-center justify-center ">
+            <MdOutlinePlaylistAddCheck className="w-full text-gray opacity-30 h-full " style={{ fontSize: "2.5rem" }} />
+          </div>
+        </div>
+
+        <div className=" w-[80%] hidden ssm:w-[70%] sm:w-[47%] xl:w-[45%] relative ">
+          <h1 className=" mt-4 uppercase sm:mt-0 font-Montserrat text-[1rem] ssm:text-[1.1rem] lg:text-[1.2rem] xl:text-[1.3rem] font-bold tracking-[4px] ">
+            Maintenance & System Optimization
           </h1>
           <p className="pt-2 font-OpenSans text-justify sm:text-left text-[0.85rem] md:text-[0.85rem] font-base ">
-            Software isn't static; it constantly evolves. I approach refactoring, dependency updates, and bug fixes with deep technical rigor—auditing API endpoints, optimizing database queries, and keeping production systems running reliably. Drawing from my experience as a Core
-            Contributor to global open-source ecosystems like the OWASP
-            Foundation, I am entirely at home navigating large, complex codebases
-            to patch security vulnerabilities, implement resilient new features,
-            and keep production systems running reliably.
+            Keeping web platforms fast, secure, and modern. Refactoring legacy logic, optimizing database performance, updating third-party integrations, and patching security vulnerabilities.
           </p>
           <div className=" w-[10%] lg:w-[12%]  absolute top-0 left-[-10%] ">
             <img className=" w-full" src={Maint} alt="" />

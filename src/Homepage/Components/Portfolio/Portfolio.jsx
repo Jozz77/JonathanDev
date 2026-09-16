@@ -103,7 +103,7 @@ export default function Portfolio() {
                       !isHovered ? "opacity-100" : "opacity-0"
                     }`}
                   >
-                    <h1 className="text-[1.2rem] ssm:text-[1.6rem] sm:text-[1.1rem] lg:text-[1.4rem] xl:text-[1.6rem] absolute bg-otherBlack opacity-80 px-2 sm:px-4 bottom-[5%] font-bold tracking-[5px] mt-1">
+                    <h1 className="text-[1.2rem] ssm:text-[1.6rem] sm:text-[1.1rem] lg:text-[1.4rem] xl:text-[1.6rem] absolute bg-otherBlack opacity-80 px-2 sm:px-4 bottom-[5%] font-bold tracking-[2px] mt-1">
                       {portfolio.title}
                     </h1>
                   </div>
@@ -115,7 +115,7 @@ export default function Portfolio() {
                     <p className="text-[0.8rem] ssm:text-[0.8rem] sm:text-[0.7rem] font-semibold">
                       {portfolio.isCoded}
                     </p>
-                    <h1 className="text-[1.2rem] ssm:text-[1.6rem] sm:text-[1.1rem] lg:text-[1.4rem] xl:text-[1.6rem] font-bold tracking-[5px] mt-1">
+                    <h1 className="text-[1.2rem] ssm:text-[1.6rem] sm:text-[1.1rem] lg:text-[1.4rem] xl:text-[1.6rem] font-bold tracking-[2px] mt-1">
                       {portfolio.title}
                     </h1>
                     <p className="text-[0.8rem] ssm:text-[0.8rem] sm:text-[0.7rem] sm:px-[10%] px-[5%] lg:px-[10%] text-center font-medium mt-2 lg:mt-4">
@@ -150,7 +150,7 @@ export default function Portfolio() {
                       !isHovered ? "opacity-100" : "opacity-0"
                     }`}
                   >
-                    <h1 className="text-[1.2rem] ssm:text-[1.6rem] sm:text-[1.1rem] lg:text-[1.4rem] xl:text-[1.6rem] absolute bg-otherBlack opacity-80 px-2 sm:px-4 bottom-[5%] font-bold tracking-[5px] mt-1">
+                    <h1 className="text-[1.2rem] ssm:text-[1.6rem] sm:text-[1.1rem] lg:text-[1.4rem] xl:text-[1.6rem] absolute bg-otherBlack opacity-80 px-2 sm:px-4 bottom-[5%] font-bold tracking-[2px] mt-1">
                       {portfolio.title}
                     </h1>
                   </div>
@@ -162,7 +162,7 @@ export default function Portfolio() {
                     <p className="text-[0.8rem] ssm:text-[0.8rem] sm:text-[0.7rem] font-semibold">
                       coded
                     </p>
-                    <h1 className="text-[1.2rem] ssm:text-[1.6rem] sm:text-[1.1rem] lg:text-[1.4rem] xl:text-[1.6rem] font-bold tracking-[5px] mt-1">
+                    <h1 className="text-[1.2rem] ssm:text-[1.6rem] sm:text-[1.1rem] lg:text-[1.4rem] xl:text-[1.6rem] font-bold tracking-[2px] mt-1">
                       {portfolio.title}
                     </h1>
                     <p className="text-[0.8rem] ssm:text-[0.8rem] sm:text-[0.7rem] sm:px-[10%] px-[5%] lg:px-[15%] text-center font-medium mt-2 lg:mt-4">
@@ -197,7 +197,7 @@ export default function Portfolio() {
                       !isHovered ? "opacity-100" : "opacity-0"
                     }`}
                   >
-                    <h1 className="text-[1.2rem] ssm:text-[1.6rem] sm:text-[1.1rem] lg:text-[1.4rem] xl:text-[1.6rem] absolute bg-otherBlack opacity-80 px-2 sm:px-4 bottom-[5%] font-bold tracking-[5px] mt-1">
+                    <h1 className="text-[1.2rem] ssm:text-[1.6rem] sm:text-[1.1rem] lg:text-[1.4rem] xl:text-[1.6rem] absolute bg-otherBlack opacity-80 px-2 sm:px-4 bottom-[5%] font-bold tracking-[2px] mt-1">
                       {portfolio.title}
                     </h1>
                   </div>
@@ -209,7 +209,7 @@ export default function Portfolio() {
                     <p className="text-[0.8rem] ssm:text-[0.8rem] sm:text-[0.7rem] font-semibold">
                       coded
                     </p>
-                    <h1 className="text-[1.2rem] ssm:text-[1.6rem] sm:text-[1.1rem] lg:text-[1.4rem] xl:text-[1.6rem] font-bold tracking-[5px] mt-1">
+                    <h1 className="text-[1.2rem] ssm:text-[1.6rem] sm:text-[1.1rem] lg:text-[1.4rem] xl:text-[1.6rem] font-bold tracking-[2px] mt-1">
                       {portfolio.title}
                     </h1>
                     <p className="text-[0.8rem] ssm:text-[0.8rem] sm:text-[0.7rem] sm:px-[10%] px-[5%] lg:px-[15%] text-center font-medium mt-2 lg:mt-4">

@@ -30,7 +30,7 @@ export default function Work() {
           TECHNICAL SKILLS
         </h1>
         <p className=" font-Montserrat pt-1 sm:pt-1 text-[0.8rem] ssm:text-[0.85rem] sm:text-[0.75rem] md:text-[0.85rem]  lg:text1.1rem] xl:text-[0.95rem]">
-        Software engineer and QA tester specializing in React, Next.js, TypeScript, and Node.js. Obsessed with software reliability, end-to-end testing, extreme web performance, and mobile optimization. Experienced in executing exploratory and regression testing, identifying subtle UI/UX edge cases, validating REST APIs, and building resilient web architectures.
+        Software and QA engineer specializing in React, Next.js, TypeScript, Node.js, and AI Workflows. Experienced in building LLM integrations, autonomous AI agents (Mastra, Zod, Gemini API), REST APIs, and automated E2E testing (Playwright) to deliver resilient, production-ready web applications.
         </p>
       </section>
 

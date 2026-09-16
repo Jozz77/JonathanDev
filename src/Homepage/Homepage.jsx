@@ -5,7 +5,7 @@ import About from "./Components/About/About"
 import Contact from "./Components/Contact"
 import Footer from "../Components/Footer/Footer"
 import Portfolio from "./Components/Portfolio/Portfolio"
-import Blog from "./Components/Blog/Blog"
+// import Blog from "./Components/Blog/Blog"
 
 
 export default function Homepage() {
@@ -16,7 +16,7 @@ export default function Homepage() {
         <Work />
         <About />
         <Portfolio />
-        <Blog />
+        {/* <Blog /> */}
         <Contact />
         <Footer />
     </div>
